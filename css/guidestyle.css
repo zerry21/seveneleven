@@ -1,0 +1,463 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Pretendard';
+    color: #111;
+    background: #fff;
+}
+
+
+/* 🟢 창업 탭 메뉴 */
+.tab-menu {
+    background-color: #f6faef;
+    /* 연한 초록빛 배경 */
+    height: 90px;
+    /* 세로 높이 고정 */
+    display: flex;
+    /* 가운데 정렬용 */
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tab-inner {
+    display: inline-flex;
+    gap: 30px;
+    /* 탭 사이 간격 */
+}
+
+.tab-menu .tab {
+    width: 130px;
+    /* 버튼 가로 크기 */
+    height: 40px;
+    /* 버튼 세로 크기 */
+    border-radius: 30px;
+    /* 둥근 모서리 (세로의 절반 정도면 자연스러움) */
+    border: none;
+    background-color: #fff;
+    /* 기본 배경색 */
+    color: #4D8654;
+    /* 글자색 (초록색 계열) */
+    font-family: 'Pretendard';
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin: 0 5px;
+    /* 버튼 간 간격 */
+    transition: all 0.3s ease;
+}
+
+/* 활성화된 탭 (왼쪽 ‘창업가이드’) */
+.tab-menu .tab.active {
+    background-color: #4D8654;
+    /* 진한 초록색 배경 */
+    color: #fff;
+}
+
+
+/* 🟩 선택된 탭 (active) */
+.tab.active {
+    background-color: #4a7b4a;
+    color: #fff;
+}
+
+/* 🐭 호버 시 */
+.tab:hover {
+    background-color: #e9f3e2;
+}
+
+/*세븐 섹션*/
+.seven-section {
+    background: #DCEDDE;
+    border-radius: 50px;
+    width: 1185px;
+    height: 511px;
+    margin: 50px auto 0 auto;
+    /* 섹션 상단 40px */
+    padding-top: 65px;
+    /* 타이틀 상단 65px */
+    box-sizing: border-box;
+    position: relative;
+    /* 절대 위치 이미지 기준 */
+}
+
+
+
+.seven-section .inner {
+    width: 100%;
+    text-align: center;
+}
+
+.seven-section .title {
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 0;
+    /* 제거 */
+    margin-bottom: 40px;
+}
+
+
+
+
+.seven-section .highlight {
+    color: #ED2C2C;
+    /* 부모 글자 빨간색 */
+    font-weight: 700;
+    border-bottom: 2px solid #ED2C2C;
+    padding-bottom: 5px;
+}
+
+.seven-section .highlight span {
+    position: relative;
+    display: inline-block;
+    color: inherit;
+    /* 부모 색상 상속 */
+}
+
+.seven-section .highlight span:not(.no-dot)::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 4px;
+    background-color: #ED2C2C;
+    border-radius: 50%;
+}
+
+
+
+.content {
+    display: flex;
+    justify-content: center;
+    /* 텍스트 중앙 */
+    gap: 60px;
+    margin-top: 0;
+    /* 필요에 따라 조정 */
+}
+
+
+.image-wrap img {
+    width: 300px;
+    height: auto;
+    display: block;
+    position: absolute;
+    /* 절대 위치 */
+    top: 150px;
+    /* 상단에서 150px */
+    left: 192px;
+    /* 왼쪽에서 192px */
+
+}
+
+
+.text-box {
+    position: absolute;
+    /* 이미 절대 위치라면 그대로 유지 */
+    top: 215px;
+    /* 필요 시 조정 */
+    right: 115px;
+    /* 오른쪽 여백 */
+    bottom: 129px;
+    /* 하단 여백 */
+    width: auto;
+    /* 필요 시 조정 */
+    text-align: right;
+    /* 오른쪽 정렬 */
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.8;
+}
+
+
+
+.text-box p {
+    margin: 0 100px 20px 0;
+    /* 순서: top right bottom left */
+}
+
+/* 협력 시스템 섹션 */
+.cooperation {
+    text-align: center;
+    padding: 80px 0;
+    font-family: 'Pretendard', sans-serif;
+}
+
+.cooperation h2 {
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+/* 밑줄은 highlight 전체에 한 번만 */
+.cooperation h2 .highlight {
+    display: inline-block;
+    font-weight: 700;
+    border-bottom: 2px solid #ED2C2C;
+    padding-bottom: 5px;
+}
+
+/* 글자별 도트 */
+.cooperation h2 .highlight span {
+    position: relative;
+    display: inline-block;
+    color: #ED2C2C;
+    font-weight: 600;
+}
+
+/* 도트 생성 */
+.cooperation h2 .highlight span::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 4px;
+    background-color: #ED2C2C;
+    border-radius: 50%;
+}
+
+/* 공백은 도트 없음 */
+.cooperation h2 .highlight .space::before {
+    display: none;
+}
+
+
+
+/* ===== 🚩 협력 시스템 섹션 관련 수정 시작 🚩 ===== */
+
+.cooperation-list {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.coop-item {
+    width: 300px;
+    text-align: center;
+}
+
+.coop-item img {
+    width: 270px;
+    height: 270px;
+    display: block;
+    margin: 0 auto 30px;
+}
+
+.coop-item .title {
+    display: inline-block;
+    font-size: 19px;
+    font-weight: 600;
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.coop-item .title::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #FA812F;
+}
+
+/* --- 여기서부터 li 및 ul 관련 핵심 수정 --- */
+
+.coop-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+    color: #999;
+    display: flex; 
+    flex-wrap: wrap; 
+}
+
+/* 첫 번째 .coop-item (2개 항목 양 끝 정렬) */
+.coop-item:nth-child(1) ul {
+    justify-content: space-between; 
+}
+.coop-item:nth-child(1) ul li {
+    width: 48%; /* 2개가 한 줄에 배치되도록 너비 지정 */
+    text-align: left; 
+}
+
+/* 두 번째 .coop-item (2개 항목 양 끝 정렬) */
+.coop-item:nth-child(2) ul {
+    justify-content: space-between; 
+}
+.coop-item:nth-child(2) ul li {
+    width: 48%; /* 2개가 한 줄에 배치되도록 너비 지정 */
+    text-align: left; 
+}
+
+/* 세 번째 .coop-item (1개 항목 왼쪽 끝 정렬) */
+.coop-item:nth-child(3) ul {
+    justify-content: flex-start; 
+}
+.coop-item:nth-child(3) ul li {
+    width: 100%; 
+    text-align: left; /* 텍스트를 왼쪽 끝에 나열 */
+}
+
+.coop-item li {
+    margin-bottom: 25px; /* 공통 여백 유지 */
+}
+
+.coop-item li strong {
+    display: block;
+    color: #111;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 2;
+    margin-bottom: 4px;
+}
+
+.coop-item li span {
+    display: block;
+    color: #999;
+}
+
+li.right {
+    float: right;        /* 오른쪽 끝 배치 */
+    text-align: left;    /* 글자 왼쪽 정렬 */
+    width: max-content;  /* 글자 길이만큼만 공간 */
+    padding-left: 65px;  /* 왼쪽 여백 추가 */
+}
+
+li.right > * {
+    display: block;           /* 내부 요소를 블록처럼 만들어서 text-align 적용 가능 */
+    text-align: left;         /* 글자를 왼쪽으로 정렬 */
+}
+
+
+li.left {
+    position: relative; /* 위치 조정 가능하게 함 */
+    left: 3px;         /* 오른쪽으로 30px 이동 */
+}
+
+li.left .down:first-of-type {
+    display: block;      /* inline → block으로 바꿔서 margin 적용 가능 */
+    margin-bottom: 25px; /* 아래 여백 50px */
+}
+
+li.secleft{
+    padding-left: 31px;
+}
+
+li.secright{
+    padding-left: 35px;
+}
+
+li.lastleft{
+    padding-left: 47px;
+}
+
+li.secleft span {
+    line-height: 2; /* 1.6배 정도로 줄 간격 확대 */
+}
+
+li.secright span {
+    line-height: 2; /* 1.6배 정도로 줄 간격 확대 */
+}
+
+li.lastleft span {
+    line-height: 2; /* 1.6배 정도로 줄 간격 확대 */
+}
+
+hr.cut-line {
+    border: 0;
+    border-bottom: 1px solid #D9D9D9;
+    height: 0;
+    width: 60vw;       /* 화면 넓이에 맞게 늘림 */
+    margin: 0px auto 80px; /* 위 10px, 좌우 auto, 아래 40px */
+    background: none;
+}
+
+
+section.cooperation:last-of-type {
+    margin-top: -80px;
+}
+
+section.cooperation:last-of-type li.lastleft {
+    position: relative;
+    left: 22px; /* 원하는 오른쪽 이동 값 */
+}
+
+/* 2번과 3번 coop-item-final의 ul 오른쪽 이동 */
+.coop-item-final:nth-of-type(2) ul,
+.coop-item-final:nth-of-type(3) ul {
+    position: relative;
+    left: 22px; /* 원하는 오른쪽 이동 값 */
+}
+
+
+
+.coop-item-final ul {
+    display: flex;
+    flex-direction: column; /* 세로 정렬 */
+    gap: 10px; /* 항목 사이 간격, 필요에 따라 조절 */
+}
+
+
+
+/* 마지막 3개 섹션만 li 이동 */
+.coop-item-final li.lastleft {
+    position: relative;
+    left: 20px; /* 원하는 오른쪽 이동 값 */
+}
+
+/* 마지막 3개 섹션 span 글자 한 줄 */
+.coop-item-final li.lastleft span {
+    display: inline;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* 선택 사항 */
+}
+
+.coop-item-final li.lastleft strong.single-line {
+    display: block;        /* 한 줄 차지 */
+    white-space: nowrap;   /* 줄바꿈 방지 */
+    overflow: visible;     /* 잘리지 않게 */
+}
+
+.coop-item-final li.lastleft span.down {
+    display: inline-block; /* inline-block으로 변경 */
+    margin-bottom: 15px;
+    white-space: nowrap;  /* 한 줄 유지 */
+}
+
+
+/* 첫 번째 cooperation 아래로 이동 */
+.cooperation-1 {
+    position: relative;
+    top: 20px; /* 아래로 20px 이동 */
+}
+
+/* 두 번째 cooperation 위로 이동 */
+.cooperation-2 {
+    position: relative;
+    top: -20px; /* 위로 20px 이동 */
+}

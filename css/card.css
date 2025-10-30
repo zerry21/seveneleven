@@ -1,0 +1,108 @@
+.content{
+    width:1920px;
+    height:674px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color:#ffffff;
+    gap:50px;
+}
+
+.card1{
+    position: relative;
+    width:350px;
+    height:500px;
+    border-radius:30px;
+    background-color:#ffffff;
+    box-shadow:0 4px 20px rgba(0,0,0,0.25);
+}
+.card1 article h1{
+    width:98px;
+    height:20px;
+    margin-top:45px;
+    margin-left:45px;
+    margin-bottom:38px;
+    font-size:20px;
+}
+.card1 article p{
+    margin-top:38px;
+    margin-left:45px;
+    font-size:18px;
+    font-weight:500;
+    line-height:30px;
+}
+.card1 .map{
+    position:absolute;
+    tOP:0;
+    left:60px;
+    bottom:0;
+}
+.card1 .face{
+    position:absolute;
+    top:250px;
+    left:154px;
+    right:13px;
+}
+
+.card2{
+    position:relative;
+    width:350px;
+    height:500px;
+    border-radius:30px;
+    background-color:#ffffff;
+    box-shadow:0 4px 20px rgba(0,0,0,0.25);
+}
+.card2 article p{
+    position: relative;
+    margin-top:104px;
+    margin-left:57px;
+    margin-bottom:185px;
+    line-height:30px;
+    font-size:18px;
+    font-weight:500;
+}
+.card2 article h1{
+    position:absolute;
+    color:#666666;
+    top:420px;
+    right:48px;
+    bottom:32px;
+}
+.card2 .left{
+    position:absolute;
+    top:205px;
+    left:39px;
+    bottom:30px;
+    right:263px;
+}
+.card2 .right{
+    position:absolute;
+    top:93px;
+    left:183px;
+    bottom:143px;
+    right:118px;
+}
+.card2 .top{
+    position:absolute;
+    top:25px;
+    left:251px;
+    bottom:210px;
+    right:50px;
+}
+
+.card3{
+    width:394px;
+    height:500px;
+    border-radius:30px;
+    background-color:#ffffff;
+    box-shadow:0 4px 20px rgba(0,0,0,0.25);
+}
+.card3 article p{
+    margin-top:104px;
+    margin-left:64px;
+    margin-bottom:66px;
+    margin-right:63px;
+    line-height:30px;
+    font-size:18px;
+    font-weight:500;
+}

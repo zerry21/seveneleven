@@ -1,0 +1,78 @@
+header {
+    width: 1920px;
+    height: 816px;
+    background-color: #EDEED7;
+    position: relative;
+}
+
+.gnb {
+    position: relative;
+}
+
+.logo {
+    width: 150px;
+    height: 27px;
+    margin-top: 48px;
+    margin-left: 385px;
+    position: absolute;
+}
+
+.nav {
+    display: flex;
+    font-size: 20px;
+    font-weight: 700;
+    gap: 50px;
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 830px;
+}
+
+.nav i {
+    font-size: 23px;
+}
+
+.nav li:last-child img {
+    width: 40px;
+    height: 40px;
+    margin-top: -8px;
+}
+
+.background {
+    padding-top: 180px;
+    padding-left: 463px;
+}
+
+.hamburger-menu {
+    display: none;
+    position: absolute;
+    width: 1920px;
+    height: 282px;
+    background-color: #fff;
+    border-radius: 0 0 80px 80px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 30px;
+}
+.hamburger-list {
+    display: flex;
+    margin-left: 830px;
+    margin-top: 112px;
+    text-align: center;
+    color: #333;
+}
+.hamburger-list ul li a:hover{
+    color: #4D8654;
+}
+
+.hamburger-list ul:nth-of-type(2) {
+    margin-left: 35px;
+}
+
+.hamburger-list ul:nth-of-type(3) {
+    margin-left: 45px;
+}
+
+.hamburger-list ul:nth-of-type(4) {
+    margin-left: 54px;
+}

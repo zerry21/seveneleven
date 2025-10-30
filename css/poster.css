@@ -1,0 +1,48 @@
+.poster{
+  width: 1920px;
+  height: 1400px;
+}
+.poster h3{
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 50px;
+  margin-left: 455px;
+  color: #111;
+}
+
+.posters article img{
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
+  box-shadow: 3px 15px 20px rgba(0,0,0,0.25);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.posters article img:hover{
+  transform: scale(1.1);
+}
+
+.posters article p{
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 25px;
+  color: #666;
+  margin-top: 20px;
+}
+
+.poster article p span{
+  color: #111;
+}
+
+.poster article{
+  text-align: center;
+  flex: 0 0 30%;
+  margin-bottom: 40px;
+}
+.posters{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 50px auto;
+  max-width: 1200px;
+}

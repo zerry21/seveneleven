@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Pretendard';
+    color: #111;
+}
+
+.big-img-wrap {
+    width: 1180px;          /* 전체 폭 고정 */
+    margin: 40px auto; /* ✅ 위아래 여백 80px, 좌우는 auto로 가운데 정렬 */
+    display: flex;          /* 이미지 2개 세로 배치 (flex로 제어) */
+    flex-direction: column; /* 세로 정렬 */
+    align-items: center;    /* 가운데 정렬 */
+    gap: 40px;              /* ✅ 이미지 사이 간격 (원하는 만큼 조절 가능: 20~60px 추천) */
+}
+
+.big-img-wrap img {
+    width: 1180px;
+    height: 400px;
+    object-fit: cover;      /* 이미지 비율 유지하며 꽉 채움 */
+    display: block;
+    border-radius: 50px;    /* (선택사항) 모서리 살짝 둥글게 */
+}
+
+hr.cut-line {
+    border: 0;
+    border-bottom: 1px solid #D9D9D9;
+    height: 0;
+    width: 65vw;       /* 화면 넓이에 맞게 늘림 */
+    margin: 0px auto 80px; /* 위 10px, 좌우 auto, 아래 40px */
+    background: none;
+}
+
+
+.big2-img-wrap {
+    position: relative; /* ✅ 내부 요소를 절대 위치로 배치 가능하게 함 */
+    width: 1180px;
+    height: 200px;
+    margin: 80px auto;
+    border-radius: 50px;
+    overflow: hidden; /* 이미지 영역 밖 텍스트 숨김 */
+}
+
+.big2-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 50px;
+}
+
+/* ✅ 이미지 위에 텍스트 올리기 */
+.seven-section {
+    position: absolute;
+    top: 50%; /* 이미지 세로 중앙 */
+    left: 50%;
+    transform: translate(-50%, -50%); /* 완전 중앙 정렬 */
+    color: #111; /* 이미지 위에서도 잘 보이게 흰색 */
+    text-align: center;
+    z-index: 2; /* 이미지 위로 오도록 */
+}
+
+/* ✅ 텍스트 꾸미기 */
+.seven-section .title {
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.seven-section .highlight {
+    color: #ED2C2C;
+    font-weight: 700;
+    border-bottom: 2px solid #ED2C2C;
+    padding-bottom: 5px;
+}
+
+.seven-section .highlight span {
+    position: relative;
+    display: inline-block;
+}
+
+.seven-section .highlight span:not(.no-dot)::before {
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 4px;
+    background-color: #ED2C2C;
+    border-radius: 50%;
+}
+
+.seven-section .inner h2.title {
+    font-size: 25px;      /* h2 글자 크기 */
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    margin-bottom: 30px;  /* h2와 p 사이 간격 */
+    color: #111;          /* 이미지 위 글자 색상 */
+}
+
+.seven-section .inner p {
+    font-size: 20px;       
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    margin-top: 0;         
+    color: #666666;
+    white-space: nowrap;       /* ✅ 한 줄로 표시 */
+    overflow: hidden;          /* 내용이 컨테이너를 벗어나면 숨김 */
+    text-overflow: ellipsis;   /* 필요시 ... 표시 */
+}
+
+
+/* ---------------------------------- */
+/* 1. 전체 카드 레이아웃 (CSS Grid) */
+/* ---------------------------------- */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 1px; 
+    
+    /* 1. 컨테이너 너비를 정확히 1180px로 설정합니다. */
+    width: 1180px; 
+    
+    /* 2. margin: 0 auto;로 컨테이너 자체를 브라우저 중앙에 배치합니다. */
+    margin: 0 auto; 
+    
+    /* 선택 사항: 1180px 이하로 좁아져도 가로 스크롤이 생기면서 
+       내용이 잘리는 것을 방지합니다. */
+    /* min-width: 1180px; */ 
+}
+
+/* ---------------------------------- */
+/* 2. 개별 카드 스타일 및 내부 레이아웃 (Flexbox) */
+/* ---------------------------------- */
+.card {
+    width: 435px; /* 카드 가로 크기 고정 */
+    background-color: #fff;
+    padding: 20px 5px 20px 0;
+    margin-right: -10px;
+    margin-bottom: 20px;
+    /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);*/
+    border-radius: 8px;
+
+    display: flex;
+    align-items: flex-start; 
+}
+
+/* 카드 이미지 영역 스타일 */
+.card-image,
+.card-grid .card-grid2 .card-image {
+    flex-shrink: 0;
+    width: 80px;
+    height: auto;
+    margin-right: 20px;
+    
+    /* ★★★ 여기서는 그림자와 모서리 스타일 제거 (위에 .card로 옮김) ★★★ */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0.8, 0.3, 0.3, 0.3);
+    overflow: hidden; 
+}
+
+.card-grid.card-grid2 .card-image {
+    margin-top: 30px; /* 카드 이미지 전체 박스 아래로 이동 */
+}
+
+
+
+.card-image img {
+    /* 이미지가 영역에 맞게 꽉 채워지도록 */
+    width: 100%; 
+    height: auto;
+    display: block;
+}
+
+/* 카드 내용 영역 스타일 */
+/* 1. card-content (부모 요소)에 가운데 정렬을 설정하여 h3를 중앙에 배치 */
+.card-content {
+    flex-grow: 1; 
+    /* 제목(h3)을 중앙에 배치하기 위한 핵심 코드 */
+    text-align: center; 
+}
+
+/* 2. h3 (제목) 자체를 텍스트 크기만큼 축소 */
+/* 제목 (h3) 스타일 수정 */
+.card-content h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #111;
+    margin-top: 0;
+    margin-bottom: 10px;
+    
+    /* ★★★ 텍스트 길이에 맞게 너비를 축소하여 치우침 방지 ★★★ */
+    display: inline-block; 
+    text-align: center; /* 텍스트 자체 중앙 정렬 유지 */
+}
+
+/* ★★★ 그리고 부모 요소인 .card-content에 텍스트 중앙 정렬을 적용합니다. ★★★ */
+.card-content {
+    flex-grow: 1; 
+    /* h3가 인라인 블록이 되었으므로, 이 속성이 h3를 중앙에 배치합니다. */
+    text-align: center; 
+}
+
+.card-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 0 10px 0;
+    display: inline-block; /* ul 폭을 li 내용만큼으로 제한 */
+}
+
+.card-content h3 {
+    text-align: center;       /* 텍스트 가운데 */
+    display: block;
+    width: 100%;              /* ul 폭 기준 중앙 정렬 */
+    margin-bottom: 10px;
+}
+
+
+.card-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* ← 모든 자식 왼쪽 정렬 기준 */
+}
+
+
+.card-content li {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: #666;
+    /* 목록 앞의 점(•)을 이미지와 유사하게 만듦 */
+    padding-left: 12px;
+    position: relative;
+}
+
+.card-content li::before {
+    content: "•"; /* 목록 앞에 점 추가 */
+    font-size: 10px; /* 여기서 점 크기 조절 */
+    color: #666; /* 점 색상 */
+    font-weight: bold;
+    display: inline-block; 
+    width: 10px; 
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.card-content .note {
+    font-size: 13px;
+    color: #666;
+    margin-top: 5px;
+    line-height: 1.4;
+    
+    /* 주석 문구도 왼쪽 정렬로 되돌립니다. */
+    text-align: left;
+}
+/* 추가 텍스트 스타일 */
+.sub-text {
+    font-size: 15px;
+    color: #666;
+    font-weight: normal;
+}
+
+.h3-wrapper {
+    display: inline-block;   /* li 내용 폭만큼 차지 */
+    text-align: center;      /* 내부 h3 가운데 정렬 */
+    width: 100%;             /* li 내용 폭 기준 중앙 정렬 */
+    margin-bottom: 10px;
+}
+
+.card-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 0 10px 0;
+}
+
+.card-content li {
+    text-align: left;        /* li 왼쪽 정렬 유지 */
+}
+
+.card-content h3.sk {
+    text-align: center;
+    padding-right: 80px;
+}
+.card-content h3.wj {
+    text-align: center;
+    padding-right: 60px;
+}
+.card-content h3.ok {
+    text-align: center;
+    padding-right: 140px;
+}
+.card-content h3.hd {
+    text-align: center;
+    padding-right: 100px;
+}
+.card-content h3.bc {
+    text-align: center;
+    padding-right: 80px;
+}
+.card-content h3.sh {
+    text-align: center;
+    padding-right: 130px;
+}
+
+
+.card-grid.card-grid2 {
+    margin-bottom: 150px; /* 원하는 만큼 여백 */
+}

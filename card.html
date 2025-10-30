@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-ELEVEN</title>
+    <link rel="icon" href="../img/favicon.ico">
+
+    <script src="https://kit.fontawesome.com/e04d3f37c6.js" crossorigin="anonymous"></script>
+    <link href="css/cardstyle.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".fa-bars").click(function (e) {
+                e.preventDefault();
+                let menu = $(".hamburger-menu");
+                if (menu.is(":visible")) {
+                    menu.slideUp({ duration: 400, easing: "swing" });
+                } else {
+                    menu.slideDown({ duration: 400, easing: "swing" });
+                }
+            });
+        });
+
+        $(document).ready(function () {
+            $(document).on('dragstart', function (e) {
+                e.preventDefault(); // 드래그 방지 (이미지, 링크 등)
+            });
+            $(document).on('selectstart', function (e) {
+                e.preventDefault(); // 텍스트 선택 방지
+            });
+            $(document).on('contextmenu', function (e) {
+                e.preventDefault(); // 우클릭 방지
+            });
+            $(document).on('keydown', function (e) {
+                if (e.ctrlKey && (e.key === 'c' || e.key === 'x' || e.key === 'v')) {
+                    e.preventDefault(); // Ctrl+C, Ctrl+X, Ctrl+V 방지
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="gnb">
+            <div class="logo"><a href="/index.html"><img src="img/logo.png" alt="세븐일레븐 로고"></a></div>
+            <ul class="nav">
+                <li><a href="/Event.html">EVENT</a></li>
+                <li><a href="sale.html">PRODUCT</a></li>
+                <li><a href="history.html">ABOUT 7</a></li>
+                <li><a href="/guide.html">창업안내</a></li>
+                <li><a href="#"><i class="fas fa-bars"></i></a></li>
+                <li><a href="https://www.lotte.co.kr/main.do#firstPage" target="_blank"><img src="img/group_logo.png"
+                            alt="그룹 로고"></a></li>
+            </ul>
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-list">
+                <ul>
+                    <li><a href="Event.html">이벤트</a></li>
+                    <li><a href="Event2.html">미술대회</a></li>
+                </ul>
+                <ul>
+                    <li><a href="sale.html">이달의 증정할인</a></li>
+                    <li><a href="new.html">PB상품 / 신상품</a></li>
+                    <li><a href="card.html">할인·멤버십 카드</a></li>
+                </ul>
+                <ul>
+                    <li><a href="history.html">회사소개</a></li>
+                    <li><a href="companydate.html">회사연혁</a></li>
+                    <li><a href="external.html">대외수상</a></li>
+                </ul>
+                <ul>
+                    <li><a href="guide.html">창업가이드</a></li>
+                    <li><a href="counsel.html">창업상담</a></li>
+                    <li><a href="success.html">창업성공기</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="menu">
+            <ul class="list">
+                <li><i class="fas fa-hamburger"></i> PRODUCT <span>> 할인·멤버쉽 카드</span></a></li>
+            </ul>
+        </div>
+        <div class="img">
+            <img src="img/small_img.png" alt="">
+        </div>
+    </header>
+
+    <!-- ✅ 1180x400 이미지 -->
+    <div class="big-img-wrap">
+        <a href="https://www.lpoint.com/app/common/LHZZ300600.do" target="_blank"><img src="img/point.png"
+                alt="포인트"></a>
+        <img src="img/pay.png" alt="페이">
+    </div>
+
+    <hr class="cut-line">
+
+    <div class="big2-img-wrap">
+        <img src="img/fbackground.png" alt="fb배경">
+
+        <section class="seven-section">
+            <div class="inner">
+                <h2 class="title">
+                    세븐일레븐 매장에서
+                    <span class="highlight">
+                        <span>제</span><span>휴</span> <span>할</span><span>인</span><span>의</span>
+                        <span>혜</span><span>택</span></span>을 누리세요 !
+                </h2>
+                <p>※ 일부 점포에서는 서비스가 적용되지 않습니다. 고객님들의 양해를 부탁 드립니다.</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- ✅ 메인 아래 첫번째 줄 카드 6개 -->
+    <div class="card-grid">
+        <div class="card">
+            <div class="card-image">
+                <img src="img/tmambu.png" alt="T멤버십1">
+            </div>
+            <div class="card-content">
+                <h3 class="sk">SKT T멤버십</h3>
+                <ul>
+                    <li>VIP / 골드회원 : 1천원당 100원 할인 또는 적립</li>
+                    <li>실버 회원 : 1천원당 50원 할인 또는 적립</li>
+                    <li>1일 1회 최대 2만원 할인/적립 가능(등급별 차등)</li>
+                    <li class="note">단, 담배, 주류, 서비스, +1 행사 상품 등 일부 상품 제외</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="img/pass.png" alt="우주패스 1">
+            </div>
+            <div class="card-content">
+                <h3 class="wj">SKT 우주패스 life <span class="sub-text">(별도 가입)</span></h3>
+                <ul>
+                    <li>1천원당 300원 할인</li>
+                    <li>일 최대 9천원 / 월 최대 3만원 할인, 일 1회</li>
+                    <li>T멤버십 앱 내 우주패스 매직 바코드 생성 및 제시</li>
+                    <li class="note">단, 담배, 주류, 서비스, +1 행사 상품 등 일부 상품 제외</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="img/okcash.png" alt="OK캐쉬백">
+            </div>
+            <div class="card-content">
+                <h3 class="ok">OK 캐쉬백</h3>
+                <ul>
+                    <li>OK캐쉬백 적립: 결제금액의 0.1%</li>
+                    <li>OK캐쉬백 사용: 전액 사용 가능</li>
+                    <li>최소 보유포인트: 100점</li>
+                    <li>OCB 회원만 적립 및 사용 가능</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="img/hyundai.png" alt="현대 카드">
+            </div>
+            <div class="card-content">
+                <h3 class="hd">현대 카드</h3>
+                <ul>
+                    <li>세븐일레븐 매장 M포인트 20% 차감할인</li>
+                    <li>포인트 보유 한도 內</li>
+                    <p class="note">&nbsp;&nbsp;&nbsp;(단, 담배, 주류, 서비스상품 등 일부 상품 제외)</p>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="img/bccard.png" alt="BC 카드">
+            </div>
+            <div class="card-content">
+                <h3 class="bc">BC 카드</h3>
+                <ul>
+                    <li>세븐일레븐 매장 TOP포인트 100% 차감할인</li>
+                    <li>포인트 보유 한도 內</li>
+                    <p class="note">&nbsp;&nbsp;&nbsp;(단, 담배, 주류, 서비스상품 등 일부 상품 제외)</p>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="img/sinhan.png" alt="신한 카드">
+            </div>
+            <div class="card-content">
+                <h3 class="sh">신한 카드</h3>
+                <ul>
+                    <li>마이 신한 포인트 30% 차감할인</li>
+                    <li>포인트 보유 한도 內</li>
+                    <p class="note">&nbsp;&nbsp;&nbsp;(단, 담배, 주류, 서비스상품 등 일부 상품 제외)</p>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="big2-img-wrap">
+        <img src="img/sbackground.png" alt="sb배경">
+
+        <section class="seven-section">
+            <div class="inner">
+                <h2 class="title">
+                    세븐일레븐 매장에서
+                    <span class="highlight">
+                        <span>멤</span><span>버</span><span>쉽</span> <span>카</span><span>드</span><span>의</span>
+                        <span>혜</span><span>택</span></span>을 누리세요 !
+                </h2>
+                <p>※ 일부 점포에서는 서비스가 적용되지 않습니다. 고객님들의 양해를 부탁 드립니다.</p>
+            </div>
+        </section>
+    </div>
+
+    <!--마지막 하단 카드3개-->
+
+    <div class="card-grid card-grid2">
+
+        <div class="card">
+            <div class="card-image">
+                <img src="img/l.point.png" alt="엘포인트">
+            </div>
+            <div class="card-content">
+                <h3 class="ok">L.POINT</h3>
+                <ul>
+                    <li>적립 : 결제 금액의 0.1% 적립</li>
+                    <li>적립 한도 : 1일 5천P, 월 15,000P 한도, </li>
+                    <li>일 적립 횟수 최대 10회</li>
+                    <li>사용 : 1포인트 단위로 현금처럼 사용 가능</li>
+                    <li>담배, 서비스 상품 등 일부 품목 적립 및 사용 제외</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="img/cashbe.png" alt="캐시비">
+            </div>
+            <div class="card-content">
+                <h3 class="sk">캐쉬비 카드</h3>
+                <ul>
+                    <li>결제금액의 0.5% 적립 (L.POINT 가입회원만)</li>
+                    <li>L.POINT 미가입시 0.1%만 적립 (포인트사용 불가)</li>
+                    <li>포인트 1000점↑부터 1점씩 현금처럼 사용 가능</li>
+                    <li>월 전체 사용금액의 0.2%적립</li>
+                    <p class="note">&nbsp;&nbsp;&nbsp;(다음달 15일 내 일괄 적립, 월 100P↑만 적립)</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="img/sevencard.png" alt="세븐일레븐 멤버십 롯데">
+            </div>
+            <div class="card-content">
+                <h3 class="wj">세븐일레븐 멤버십 롯데카드</h3>
+                <ul>
+                    <li>세븐일레븐 매장 10%할인</li>
+                    <li>L.POINT 적립 (1,000원당 5포인트) </li>
+                    <p class="note">&nbsp;&nbsp;&nbsp;+ 롯데카드 결제 시 1,000원당 2P 추가 적립</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <footer>
+        <div class="first">
+            <img class="blogo" src="img/logo.png" alt="세븐일레븐 로고">
+            <div class="box1">
+                <p>FAMILY SITE<i class="fas fa-chevron-up"></i></p>
+            </div>
+            <div class="box2">
+                <p>GO</p>
+            </div>
+        </div>
+        <div class="second">
+            <p>CUSTOMER 고객의소리 | 채용문의 | 창업상담 | 입점문의 <br>
+                RECRUT 기업채용 | MATE | 윤리핫라인 | 불공정거래신고 | 안전·보건핫라인</p>
+            <P><span>사이트맵</span> | 개인정보처리방침 | 고정형 영상정보처리기기 운영·관리 방침</P>
+            <div class="txt">
+                <img src="img/ico_ISMSP.png" alt="">
+                <p>[인증범위] 코리아세븐 세븐일레븐 홈페이지 및 모바일 앱 서비스 <br>
+                    [유효기간] 2024-02-07 ~ 2027-02-06 </p>
+            </div>
+        </div>
+        <div class="third">
+            <p><span>서울특별시 강동구 천호대로 1077 이스트센트럴타워 16~18층 · TEL 1577-0711 · FAX 02-2679-6860</span><br>세븐일레븐 고객센터
+                1577-0711 · 롯데백화점 고객센터 1688-1211</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+.event {
+  width: 1920px;
+  height: 484px;
+  background-color: #eaf5d1;
+}
+
+.event>h1 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #111;
+  padding-top: 35px;
+  margin-left: 358px;
+}
+.event >p{
+  font-size: 15px;
+  font-weight: 400;
+  color: #111;
+  margin-left: 1437px;
+}
+.event p i{
+  width: 7px;
+  height: 13px;
+  color: #111;
+}
+
+.poster {
+  display: flex;
+  margin-top: 31px;
+  margin-left: 345px;
+  gap: 40px;
+}
+
+.poster>.arrow:first-of-type {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #F9FCF2;
+  border: 1px solid #666;
+  margin-top: 100px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.poster>.arrow:first-of-type i{
+  width: 11px;
+  height: 20px;
+  color: #666;
+  margin-top: 10px;
+  margin-left: 14px;
+}
+.poster>.arrow:last-of-type {
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #F9FCF2;
+  border: 1px solid #666;
+  margin-top: 100px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+.poster>.arrow:last-of-type i{
+  width: 11px;
+  height: 20px;
+  color: #666;
+  margin-top: 10px;
+  margin-left: 14px;
+}
+
+.poster .arrow:hover{
+  background-color: #4D8654;
+}
+.poster .arrow:hover i{color: #f9fcf2;}
+
+.poster article img{
+  width: 240px;
+  height: 240px;
+  border-radius: 30px;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.poster article img:hover{
+  transform: scale(1.1);
+}
+
+.poster article p{
+  font-size: 17px;
+  font-weight: 500;
+  color: #666;
+  text-align: center;
+  line-height: 25px;
+  margin-top: 10px;
+}
+
+.poster article p span{color: #111;}

@@ -1,0 +1,105 @@
+body{position: relative;}
+footer {
+    width: 1920px;
+    height: 400px;
+    background-color: #EAF5D1;
+    border-radius: 100px 100px 0 0;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.25);
+    position: absolute;
+    transform: translateY(-400px);
+}
+
+.first {position: relative;}
+.blogo {
+    width: 181px;
+    height: 33px;
+    margin-top: 55px;
+    margin-left: 869px;
+    position: absolute;
+}
+.box1 {
+    width: 192px;
+    height: 34px;
+    border-radius: 34px;
+    border: 1px solid #999;
+    display: flex;
+    position: absolute;
+    margin-top: 55px;
+    margin-left: 1450px;
+}
+.box1 p:first-of-type {
+    font-size: 15px;
+    font-weight: 400;
+    color: #999;
+    margin-top: 8px;
+    margin-left: 15px;
+}
+.box1 p i {
+    margin-left: 50px; 
+}
+.box2 {
+    background-color: #999;
+    width: 43px;
+    height: 34px;
+    border-radius: 34px;
+    position: absolute;
+    margin-top: 55px;
+    margin-left: 1647px;
+}
+.box2 p {
+    font-size: 15px;
+    font-weight: 400;
+    color: #EAF5D1;
+    margin-top: 8px;
+    margin-left: 11px;
+}
+
+.second{
+    position: relative;
+    font-weight: 400;
+    color: #666;
+    line-height: 20px;
+}
+.second>p:nth-child(1){
+    font-size: 13px;
+    position: absolute;
+    margin-top: 180px;
+    margin-left: 240px;
+}
+.second>p:nth-child(2){
+    font-size: 15px;
+    position: absolute;
+    margin-top: 202px;
+    margin-left: 736px;
+}
+.second span{
+    color: #111;
+    font-weight: 500;
+}
+
+.txt{
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    margin-top: 180px;
+    margin-left: 1258px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #666;
+    line-height: 20px;}
+
+.third{
+    position: absolute;
+    font-size: 15px;
+    font-weight: 500;
+    color: #666;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 280px;
+    margin-left: 625px;
+}
+.third span{
+    font-size: 17px;
+    color: #111;
+}
+

@@ -1,0 +1,575 @@
+/* 전체 섹션: 헤더 아래 간격 + 중앙 고정 */
+.product-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  /* 헤더와의 간격 */
+  overflow: hidden;
+  /* 창 줄일 때 좌우가 잘려도 중앙 유지 */
+}
+/* 배경 박스 */
+.product-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1185px;
+  height: 280px;
+  background-color: #DCEDDE;
+  border-radius: 50px;
+  padding: 0 99px;
+  gap: 341.5px;
+  box-sizing: border-box;
+  position: relative;
+}
+/* 텍스트 영역 */
+.product-text {
+  white-space: nowrap;
+  line-height: 52px;
+}
+.product-text h2 {
+  font-size: 19px;
+  font-weight: bold;
+  color: #333;
+}
+.product-text p {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1.7;
+  color: #555;
+}
+.product-text .notice {
+  font-size: 17px;
+  font-weight: 500;
+  color: #555;
+}
+.product-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 92.5px 31px 0;
+  /* 위 32px, 오른쪽 92.5px, 아래 31px, 왼쪽 0 */
+  box-sizing: border-box;
+}
+.product-image img {
+  width: 240px;
+  height: 217px;
+  object-fit: cover;
+}
+
+
+/*========================================================================================*/
+
+
+/*섹션 전체*/
+.recent-section {
+  background-color: #F7FAEF;
+  padding: 40px 0;
+  margin-bottom: 40px;
+  text-align: left;
+  font-family: 'Pretendard', sans-serif;
+}
+.recent-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 400px;
+  margin-bottom: 25px;
+  color: #111;
+}
+.recent-title a {
+  color: #4AA34A;
+  text-decoration: none;
+  margin-left: 6px;
+}
+/* 카드 묶음 */
+.recent-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+/* 각 카드 */
+.recent-card {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  width: 520px;
+  height: 180px;
+  border-radius: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  padding: 15px 60px;
+  box-sizing: border-box;
+}
+/* 상품 이미지 */
+.recent-img {
+  width: 60px;
+  height: 90px;
+  object-fit: contain;
+  margin-right: 20px;
+}
+/* 텍스트 부분 */
+.recent-info {
+  flex: 1;
+}
+.recent-badges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  /* 뱃지 그룹을 수직 중앙에 놓기 위한 높이 */
+}
+.center-badges {
+  display: flex;
+  border-radius: 8px;
+  gap: 5px;
+  margin-right: 80px;
+  margin-bottom: 30px;
+}
+/* (만약 .recent-star가 있다면 분리하는 CSS는 이전 답변을 참고하세요) */
+.badge {
+  display: inline-flex;
+  /* 뱃지 자체는 인라인 블록처럼 작동하게 유지하면서 Flexbox 기능 활성화 */
+  justify-content: center;
+  /* 텍스트를 수평 중앙 정렬 */
+  align-items: center;
+  /* 텍스트를 수직 중앙 정렬 */
+  /* 뱃지의 크기를 명확히 해야 중앙 정렬이 의미가 있습니다. */
+  /* 현재 설정이 없다면 아래 속성들을 추가하세요. */
+  width: 80px;
+  height: 25px;
+  /* 뱃지의 높이 지정 (예시) */
+  padding: 0 5px;
+  /* 내부 여백으로 너비/높이 조절 (선택 사항) */
+  /* 텍스트가 여러 줄일 때 수직 정렬을 돕기 위해 line-height를 제거하거나 재정의하는 것이 좋습니다. */
+  line-height: 1;
+}
+.center-badges span:nth-child(1),
+.center-badges span:nth-child(2) {
+  border-radius: 5px;
+}
+.badge-green {
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #DFF3C3;
+  color: #111;
+}
+.badge-purple {
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #EDDAF6;
+  color: #111;
+}
+.badge-blue {
+  font-size: 15px;
+  font-weight: 500;
+  background-color: #D7EAFC;
+  color: #111;
+  margin-right: 90px;
+}
+
+
+
+
+
+
+/* 별점 */
+.recent-star {
+  padding-left: 10px;
+  padding-top: 5px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #333;
+}
+/* 상품명 */
+.recent-name {
+  font-size: 17px;
+  font-weight: 500;
+  color: #111;
+}
+/* 가격 */
+.recent-price {
+  font-weight: 700;
+  font-size: 17px;
+  color: #111;
+  margin-top: 12px;
+}
+.recent-price-origin {
+  font-size: 14px;
+  color: #aaa;
+  text-decoration: line-through;
+  margin-left: 5px;
+}
+.product-info-group {
+  margin-left: 10px;
+  margin-top: -10px;
+}
+.can {
+  text-decoration: line-through;
+  font-size: 13px;
+  font-weight: 500;
+  color: #666;
+  /* 회색으로 하면 할인 느낌 강조 가능 */
+}
+/* :큰_초록색_원: 창업 탭 메뉴 */
+.tab-menu {
+  background-color: #F6FAEF;
+  /* 연한 초록빛 배경 */
+  height: 100px;
+  /* 세로 높이 고정 */
+  display: flex;
+  /* 가운데 정렬용 */
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+}
+.tab-inner {
+  display: inline-flex;
+  gap: 30px;
+  /* 탭 사이 간격 */
+}
+.tab-menu .tab {
+  width: 170px;
+  /* 버튼 가로 크기 */
+  height: 40px;
+  /* 버튼 세로 크기 */
+  border-radius: 30px;
+  border: 1px solid #4D8654;
+  background-color: #fff;
+  /* 기본 배경색 */
+  color: #4D8654;
+  /* 글자색 (초록색 계열) */
+  font-family: 'Pretendard';
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  cursor: pointer;
+  margin: 0 5px;
+  /* 버튼 간 간격 */
+  transition: all 0.3s ease;
+}
+/* 활성화된 탭 (왼쪽 ‘창업가이드’) */
+.tab-menu .tab.active {
+  background-color: #4D8654;
+  /* 진한 초록색 배경 */
+  color: #fff;
+}
+/* :큰_초록색_네모: 선택된 탭 (active) */
+.tab.active {
+  background-color: #4A7B4A;
+  color: #fff;
+}
+/* :생쥐: 호버 시 */
+.tab:hover {
+  background-color: #E9F3E2;
+}
+.parent-container {
+  display: flex;
+  justify-content: center;
+  /* 자식 요소(oneplus)를 가로(수평) 중앙에 정렬 */
+  /* 필요하다면 width: 100%; 를 부모에 설정하여 너비를 확보해야 합니다. */
+}
+.oneplus {
+  width: 110px;
+  height: 40px;
+  border-radius: 50%;
+  /* 가로/세로 크기의 50%를 적용하여 완벽한 원을 만듦 */
+  background-color: #DCEDDE;
+  /* 예시 배경색 */
+  color: #111;
+  /* 텍스트 색상 */
+  margin: 0 auto 40px;
+  display: flex;
+  /* Flexbox 활성화 */
+  justify-content: center;
+  /* 수평 중앙 정렬 */
+  align-items: center;
+  /* 수직 중앙 정렬 */
+}
+.oneplus p {
+  margin: 0;
+  padding: 0;
+  /* 추가 폰트 스타일링 */
+  font-size: 20px;
+  font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*===============================================================================*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.event-section {
+  width: 100%;
+  max-width: 1920px;
+  background: #fff;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 줄별 공통 */
+.product-row {
+  position: relative;
+  width: 1400px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+/* 제목 */
+.tab-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+  background: #DCEDDE;
+  border-radius: 45px;
+  width: 120px;
+  height: 40px;
+  line-height: 40px;
+  margin: -25px auto 40px;
+}
+
+.arrow {
+  position: absolute;
+  top: 45%; /* 수직 중앙 */
+  transform: translateY(-200%); /* 수직 중앙 맞춤 */
+  width: 40px;   /* 버튼 도형 크기 */
+  height: 40px;  /* 버튼 도형 크기 */
+  border-radius: 10px;
+  border: none;
+  background: #DCEDDE;
+  cursor: pointer;
+
+  display: flex;         /* 아이콘 중앙 정렬 */
+  justify-content: center; 
+  align-items: center;  
+
+  font-size: 20px; /* 아이콘 전체 기본 크기 */
+  color: #666;
+}
+
+
+.arrow.left {
+  left: 40px;
+  bottom: 0px;
+}
+
+.arrow.right {
+  right: 40px;
+  top: 100;
+}
+
+
+/* 새로 추가하는 왼쪽 버튼 */
+/* 왼쪽 위 버튼 */
+.arrow.left.group-left {
+  left: 40px;
+  top: 17%;        /* 위쪽 버튼 위치 */
+  transform: translateY(-50%);
+}
+
+/* 왼쪽 아래 버튼 */
+.arrow.left.new-left.group-left{
+  left: 40px;
+  top: 63%;        /* 아래 버튼 위치, 간격 조절 */
+}
+
+
+
+
+.arrow.right.group-right {
+  right: 40px;
+  top: 17%;        /* 위쪽 버튼 위치 */
+  transform: translateY(-50%);
+}
+
+.arrow.right.new-right.group-right {
+  right: 40px;
+  top: 63%;        /* 아래 버튼 위치, 50% → 55%로 간격 조절 */
+  transform: translateY(-50%);
+}
+
+
+
+
+/* 상품 도형 틀 */
+.product-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.product-box {
+  position: relative; /* 별 아이콘 위치 지정 위해 필요 */
+  width: 200px;
+  height: 200px;
+  border: 1px solid #999;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  overflow: hidden;
+}
+
+/* 이미지 비율 유지 + 잘리지 않게 */
+.product-box img {
+    width: auto;
+    height: auto;
+    max-width: 50%;
+    max-height: 50%;
+    object-fit: contain;
+}
+
+
+/* 오른쪽 아래 별 아이콘 */
+.corner-star {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: #666;        /* 검은색 */
+    font-size: 20px;    /* 크기 */
+}
+
+.corner-star:hover {
+    color: #111;       /* 호버 시 검정색 */
+    cursor: pointer;
+}
+
+
+
+.product-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+}
+
+.product-name {
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #111;
+}
+
+.product-price {
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #111;
+}
+
+.product-rating {
+  margin-top: 10px;
+  font-size: 17px;
+  color: #666;
+}
+
+.product-rating:hover {
+    color: #111;       /* 호버 시 검정색 */
+    cursor: pointer;
+}
+
+
+
+/* 인디케이터 (6개 원) */
+.indicator {
+  display: flex;
+  justify-content: center; /* 가로 가운데 */
+  align-items: center;     /* 세로 가운데 */
+  gap: 7px;
+  margin: 40px auto;
+}
+.circle {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background: #D9D9D9;
+}
+.circle.active {
+  width: 15px;
+  height: 15px;
+  background: #DCEDDE;
+  border: 1px solid #666;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+.product-price .origin {
+  text-decoration: line-through;
+  font-size: 13px;
+  font-weight: 500;
+  color: #666;
+  margin-left: 5px;
+}
+
+
+/* 하단 보더 */
+.bottom-border {
+  width: 90%;        /* 전체 너비의 80%로 줄임 */
+  height: 1px;
+  background: #ccc;
+  margin: 30px auto 0;  /* 가운데 정렬 */
+}
+
+
+.product-row:nth-of-type(2) {
+  margin-bottom: -25px; /* 두 번째 */
+}

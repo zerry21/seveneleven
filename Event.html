@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-ELEVEN</title>
+    <link rel="icon" href="../img/favicon.ico">
+
+    <script src="https://kit.fontawesome.com/e04d3f37c6.js" crossorigin="anonymous"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/event1.css" rel="stylesheet">
+    <link href="css/poster.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".fa-bars").click(function (e) {
+                e.preventDefault();
+                let menu = $(".hamburger-menu");
+                if (menu.is(":visible")) {
+                    menu.slideUp({ duration: 400, easing: "swing" });
+                } else {
+                    menu.slideDown({ duration: 400, easing: "swing" });
+                }
+            });
+        });
+        
+        $(document).ready(function () {
+            $(document).on('dragstart', function (e) {
+                e.preventDefault(); // 드래그 방지 (이미지, 링크 등)
+            });
+            $(document).on('selectstart', function (e) {
+                e.preventDefault(); // 텍스트 선택 방지
+            });
+            $(document).on('contextmenu', function (e) {
+                e.preventDefault(); // 우클릭 방지
+            });
+            $(document).on('keydown', function (e) {
+                if (e.ctrlKey && (e.key === 'c' || e.key === 'x' || e.key === 'v')) {
+                    e.preventDefault(); // Ctrl+C, Ctrl+X, Ctrl+V 방지
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="gnb">
+            <div class="logo"><a href="/index.html"><img src="img/logo.png" alt="세븐일레븐 로고"></a></div>
+            <ul class="nav">
+                <li><a href="/Event.html">EVENT</a></li>
+                <li><a href="sale.html">PRODUCT</a></li>
+                <li><a href="history.html">ABOUT 7</a></li>
+                <li><a href="/guide.html">창업안내</a></li>
+                <li><a href="#"><i class="fas fa-bars"></i></a></li>
+                <li><a href="https://www.lotte.co.kr/main.do#firstPage" target="_blank"><img src="img/group_logo.png"
+                            alt="그룹 로고"></a></li>
+            </ul>
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-list">
+                <ul>
+                    <li><a href="Event.html">이벤트</a></li>
+                    <li><a href="Event2.html">미술대회</a></li>
+                </ul>
+                <ul>
+                    <li><a href="sale.html">이달의 증정할인</a></li>
+                    <li><a href="new.html">PB상품 / 신상품</a></li>
+                    <li><a href="card.html">할인·멤버십 카드</a></li>
+                </ul>
+                <ul>
+                    <li><a href="history.html">회사소개</a></li>
+                    <li><a href="companydate.html">회사연혁</a></li>
+                    <li><a href="external.html">대외수상</a></li>
+                </ul>
+                <ul>
+                    <li><a href="guide.html">창업가이드</a></li>
+                    <li><a href="counsel.html">창업상담</a></li>
+                    <li><a href="success.html">창업성공기</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu">
+            <ul class="list">
+                <li><i class="fas fa-hamburger"></i> 창업안내 <span>> 창업상담</span></a></li>
+        </div>
+        <div class="img">
+            <img src="img/small_img.png" alt="">
+        </div>
+        </div>
+    </header>
+
+    <section class="event">
+        <div class="panel">
+            <div class="text">
+                <h3>예약주문서비스</h3>
+                <p>언제 어디서든 편리하게 즐기는 세븐일레븐에서 도시락을 예약하세요!<br><br> 바쁜 직장인, 싱글족을 위한 세븐이레븐의 예약주문 서비스! <br> 단체주문도 OK! 단 하나의
+                    도시락도 OK! 원하는 점포 OK! 원하는 시간 OK!</p>
+            </div>
+            <img src="img/date.png" alt="">
+        </div>
+        <div class="wrapper">
+            <h3>완료된 이벤트</h3>
+            <div class="next">
+                <div class="arrow">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div class="arrow">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+                <article>
+                    <img src="img/lucky.png" alt="">
+                    <p>[7월] 711DAY <br> 2025-07-21 ~ 2025-07-31</p>
+                </article>
+                <article>
+                    <img src="img/wine8.png" alt="">
+                    <p><span>[8월]</span> 와인 <br> 2025-08-01 ~ 2025-08-31</p>
+                </article>
+                <article>
+                    <img src="img/minsang8.png" alt="">
+                    <p>[8월] 민생회복 <br> 2025-08-01 ~ 2025-08-31</p>
+                </article>
+                <div class="dots">
+                    <span class="dot"></span>
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+    </section>
+
+    <section class="poster">
+        <h3>진행중인 이벤트</h3>
+        <div class="posters">
+            <article>
+                <img src="img/minsang.png" alt="">
+                <p><span>[9월]</span> 민생회복 <br> 2025-09-18 ~ 2025-10-31</p>
+            </article>
+            <article>
+                <img src="img/rice.png" alt="">
+                <p>25년 농식품바우처 <br> 2025-04-01 ~ 2025-12-31</p>
+            </article>
+            <article>
+                <img src="img/phone7.png" alt="">
+                <p>세븐일레븐 유심 구매</p>
+            </article>
+            <article>
+                <img src="img/lee9.png" alt="">
+                <p><span>[9월]</span> 이정후 6종 <br> 2025-09-01 ~ 2025-09-30</p>
+            </article>
+            <article>
+                <img src="img/bear.png" alt="">
+                <p><span>[9월]</span> 맥주 <br> 2025-09-01 ~ 2025-09-30</p>
+            </article>
+            <article>
+                <img src="img/plcc9.png" alt="">
+                <p><span>[9월]</span> PLCC <br> 2025-09-01 ~ 2025-09-30</p>
+            </article>
+            <article>
+                <img src="img/wine9.png" alt="">
+                <p><span>[9월]</span> 와인 <br> 2025-09-01 ~ 2025-09-30</p>
+            </article>
+            <article>
+                <img src="img/up9.png" alt="">
+                <p><span>[9월]</span> 한도초과 구성 <br> 2025-09-01 ~ 2025-09-30</p>
+            </article>
+            <article>
+                <img src="img/app.jpg" alt="">
+                <p>세븐일레븐 APP 안내 <br> 2025-04-01 ~ 2025-12-31</p>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <div class="first">
+            <img class="blogo" src="img/logo.png" alt="세븐일레븐 로고">
+            <div class="box1">
+                <p>FAMILY SITE <i class="fas fa-chevron-up"></i></p>
+            </div>
+            <div class="box2">
+                <p>GO</p>
+            </div>
+        </div>
+        <div class="second">
+            <p>CUSTOMER 고객의소리 | 채용문의 | 창업상담 | 입점문의 <br>
+                RECRUT 기업채용 | MATE | 윤리핫라인 | 불공정거래신고 | 안전·보건핫라인</p>
+            <P><span>사이트맵</span> | 개인정보처리방침 | 고정형 영상정보처리기기 운영·관리 방침</P>
+            <div class="txt">
+                <img src="img/ico_ISMSP.png" alt="">
+                <p>[인증범위] 코리아세븐 세븐일레븐 홈페이지 및 모바일 앱 서비스 <br>
+                    [유효기간] 2024-02-07 ~ 2027-02-06 </p>
+            </div>
+        </div>
+        <div class="third">
+            <p><span>서울특별시 강동구 천호대로 1077 이스트센트럴타워 16~18층 · TEL 1577-0711 · FAX 02-2679-6860</span><br>세븐일레븐 고객센터
+                1577-0711 · 롯데백화점 고객센터 1688-1211</p>
+        </div>
+    </footer>
+</body>
+
+</html>

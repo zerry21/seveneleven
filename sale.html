@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7-ELEVEN</title>
+  <link rel="icon" href="../img/favicon.ico">
+
+  <script src="https://kit.fontawesome.com/71df77a7d7.js" crossorigin="anonymous"></script>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/header.css" rel="stylesheet">
+  <link href="css/sale.css" rel="stylesheet">
+  <link href="css/footer.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".fa-bars").click(function (e) {
+        e.preventDefault();
+        let menu = $(".hamburger-menu");
+        if (menu.is(":visible")) {
+          menu.slideUp({ duration: 400, easing: "swing" });
+        } else {
+          menu.slideDown({ duration: 400, easing: "swing" });
+        }
+      });
+    });
+
+    $(document).ready(function () {
+      $(document).on('dragstart', function (e) {
+        e.preventDefault(); // 드래그 방지 (이미지, 링크 등)
+      });
+      $(document).on('selectstart', function (e) {
+        e.preventDefault(); // 텍스트 선택 방지
+      });
+      $(document).on('contextmenu', function (e) {
+        e.preventDefault(); // 우클릭 방지
+      });
+      $(document).on('keydown', function (e) {
+        if (e.ctrlKey && (e.key === 'c' || e.key === 'x' || e.key === 'v')) {
+          e.preventDefault(); // Ctrl+C, Ctrl+X, Ctrl+V 방지
+        }
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="gnb">
+      <div class="logo"><a href="index.html"><img src="img/logo.png" alt="세븐일레븐 로고"></div></a>
+      <ul class="nav">
+        <li><a href="Event.html">EVENT</a></li>
+        <li><a href="sale.html">PRODUCT</a></li>
+        <li><a href="history.html">ABOUT 7</a></li>
+        <li><a href="guide.html">창업안내</a></li>
+        <li><a href="#"><i class="fas fa-bars"></i></a></li>
+        <li><a href="https://www.lotte.co.kr/main.do#firstPage" target="_blank"><img src="img/group_logo.png"
+              alt="그룹 로고"></a></li>
+      </ul>
+    </div>
+    <div class="hamburger-menu">
+      <div class="hamburger-list">
+        <ul>
+          <li><a href="Event.html">이벤트</a></li>
+          <li><a href="Event2.html">미술대회</a></li>
+        </ul>
+        <ul>
+          <li><a href="sale.html">이달의 증정할인</a></li>
+          <li><a href="new.html">PB상품 / 신상품</a></li>
+          <li><a href="card.html">할인·멤버십 카드</a></li>
+        </ul>
+        <ul>
+          <li><a href="history.html">회사소개</a></li>
+          <li><a href="companydate.html">회사연혁</a></li>
+          <li><a href="external.html">대외수상</a></li>
+        </ul>
+        <ul>
+          <li><a href="guide.html">창업가이드</a></li>
+          <li><a href="counsel.html">창업상담</a></li>
+          <li><a href="success.html">창업성공기</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="menu">
+      <ul class="list">
+        <li><i class="fas fa-hamburger"></i> PRODUCT <span>> 이달의 할인 상품</span>
+    </div>
+    <div class="img">
+      <img src="img/small_img.png" alt="">
+    </div>
+    </div>
+  </header>
+
+
+  <!---------------------------------------------------->
+
+
+
+
+  <section class="product-section">
+    <div class="product-container">
+      <!-- 왼쪽 텍스트 -->
+      <div class="product-text">
+        <h2>세븐일레븐의 신상품과 인기상품을 지금 만나보세요</h2>
+        <p>
+          한 끼부터 특별한 간식, 시즌 한정 상품까지!<br>
+          세븐일레븐에서만 만날 수 있는 특별한 상품들을 경험해보세요.<br>
+          전국 세븐일레븐 점포에서 여러분을 기다립니다.
+        </p>
+        <span class="notice">[ 일부 점포 제외 ]</span>
+      </div>
+
+      <!-- 오른쪽 이미지 -->
+      <div class="product-image">
+        <img src="img/img.png" alt="세븐일레븐 신상품 이미지">
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+  <!------------------------------------------------------------------------->
+
+
+
+
+
+
+
+
+  <!--방금 본 상품-->
+  <!-- :흰색_확인_표시: 최근 본 상품 영역 -->
+  <section class="recent-section">
+    <h2 class="recent-title">방금 본 상품 <a href="#">바로가기</a></h2>
+    <div class="recent-container">
+      <!-- 왼쪽 카드 -->
+      <div class="recent-card">
+        <img src="img/chotime.png" alt="[빙그레] 오구초코타임 200ml" class="recent-img">
+        <div class="recent-info">
+          <div class="recent-badges">
+            <div class="center-badges">
+              <span class="badge badge-green">1+1</span>
+              <span class="badge badge-purple">PB</span>
+              <span class="recent-star"><i class="fas fa-star"></i> 32</span>
+            </div>
+          </div>
+          <div class="product-info-group">
+            <p class="recent-name">[빙그레] 오구초코타임 200ml</p>
+            <p class="recent-price">1,300원</p>
+          </div>
+        </div>
+      </div>
+      <!-- 오른쪽 카드 -->
+      <div class="recent-card">
+        <img src="img/mango.png" alt="망고" class="recent-img">
+        <div class="recent-info">
+          <div class="recent-badges">
+            <div class="center-badges">
+              <span class="badge badge-blue">할인</span>
+              <span class="recent-star"><i class="fas fa-star"></i> 19</span>
+            </div>
+          </div>
+          <div class="product-info-group">
+            <p class="recent-name">[돌코리아] 후룻바틀망고 666g</p>
+            <p class="recent-price">7,000원&nbsp;&nbsp;<span class=can>9,000</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- :흰색_확인_표시: 탭 메뉴 (별도 섹션으로 분리) -->
+    <section class="tab-menu">
+      <div class="tab-inner">
+        <a href="sale.html"><button class="tab active">이달의 할인 상품</button></a>
+        <a href="new.html"><button class="tab">PB·신상품</button></a>
+      </div>
+    </section>
+  </section>
+
+
+
+
+
+
+
+
+  <!------------------------------------------------------->
+  <section class="event-section">
+
+    <!-- ✅ 1+1 줄 -->
+    <div class="product-row">
+      <div class="tab-title">1+1</div>
+      <button class="arrow left">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+
+      <div class="product-wrap">
+        <article class="product-item">
+          <div class="product-box">
+            <img src="img/danco.jpg" alt="덴마크 커피커피 300ml">
+            <i class="fa fa-star corner-star"></i>
+          </div>
+          <div class="product-name">덴마크) 커피커피 300ml</div>
+          <div class="product-price">2,100원</div>
+          <div class="product-rating">
+            <i class="fas fa-star"></i> 12
+          </div>
+
+        </article>
+
+        <article class="product-item">
+          <div class="product-box">
+            <img src="img/yougu.jpg" alt="풀무원 요거톡스타볼 132g">
+            <i class="fa fa-star corner-star"></i>
+          </div>
+          <div class="product-name">풀무원) 요거톡스타볼 132g</div>
+          <div class="product-price">2,200원</div>
+          <div class="product-rating">
+            <i class="fas fa-star"></i> 21
+          </div>
+
+        </article>
+
+        <article class="product-item">
+          <div class="product-box">
+            <img src="img/strtime.jpg" alt="PB 오구딸기타임 200ml">
+            <i class="fa fa-star corner-star"></i>
+          </div>
+          <div class="product-name">PB) 오구딸기타임 200ml</div>
+          <div class="product-price">1,300원</div>
+          <div class="product-rating">
+            <i class="fas fa-star"></i> 11
+          </div>
+
+        </article>
+
+        <article class="product-item">
+          <div class="product-box">
+            <img src="img/apple.jpg" alt="남양 과수원사과 200ml">
+            <i class="fa fa-star corner-star"></i>
+          </div>
+          <div class="product-name">남양) 과수원사과 200ml</div>
+          <div class="product-price">1,800원</div>
+          <div class="product-rating">
+            <i class="fas fa-star"></i> 10
+          </div>
+
+        </article>
+
+        <article class="product-item">
+          <div class="product-box">
+            <img src="img/sosazi.jpg" alt="CJ 숯불후랑크 120g">
+            <i class="fa fa-star corner-star"></i>
+          </div>
+          <div class="product-name">CJ) 숯불후랑크 120g</div>
+          <div class="product-price">3,700원</div>
+          <div class="product-rating">
+            <i class="fas fa-star"></i> 33
+          </div>
+
+        </article>
+      </div>
+
+      <button class="arrow right">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+
+      <div class="indicator">
+        <div class="circle active"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+      </div>
+
+      <div class="bottom-border"></div>
+    </div>
+
+    <!-- ✅ 2+1 줄 -->
+    <div class="product-row">
+      <div class="tab-title">2+1</div>
+      <button class="arrow left">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+
+      <div class="product-wrap">
+        <article class="product-item">
+          <div class="product-box">
+            <img src="img/hanpizzs.jpg" alt="사조 한입피자콤비네이션 80g">
+            <i class="fa fa-star corner-star"></i>
+          </div>
+          <div class="product-name">사조) 한입피자콤비네이션 80g</div>
+          <div class="product-price">2,500원</div>
+          <div class="product-rating">
+            <i class="fas fa-star"></i> 22
+          </div>
+
+        </article>
+
+        <article class="product-item">
+          <div class="product-box">
+            <img src="img/pineapple.jpg" alt="뚜또 파인애플 230g">
+            <i class="fa fa-star corner-star"></i>
+          </div>
+          <div class="product-name">뚜또) 파인애플 230g</div>
+          <div class="product-price">2,600원</div>
+          <div class="product-rating">
+            <i class="fas fa-star"></i> 20
+          </div>
+
+        </article>
+
+        <article class="product-item">
+          <div class="product-box">
+            <img src="img/stryou.jpg" alt="서울 딸기요구르트 225ml">
+            <i class="fa fa-star corner-star"></i>
+          </div>
+          <div class="product-name">서울) 딸기요구르트 225ml</div>
+          <div class="product-price">2,700원</div>
+          <div class="product-rating">
+            <i class="fas fa-star"></i> 25
+          </div>
+
+        </article>
+
+        <article class="product-item">
+          <div class="product-box">
+            <img src="img/inpocket.jpg" alt="덴마크 인포켓치즈 20g">
+            <i class="fa fa-star corner-star"></i>
+          </div>
+          <div class="product-name">덴마크) 인포켓치즈 20g</div>
+          <div class="product-price">1,700원</div>
+          <div class="product-rating">
+            <i class="fas fa-star"></i> 50
+          </div>
+
+        </article>
+
+        <article class="product-item">
+          <div class="product-box">
+            <img src="img/barista.jpg" alt="매일 바리스타카라멜 250ml">
+            <i class="fa fa-star corner-star"></i>
+          </div>
+          <div class="product-name">매일) 바리스타카라멜 250ml</div>
+          <div class="product-price">2,900원</div>
+          <div class="product-rating">
+            <i class="fas fa-star"></i> 13
+          </div>
+
+        </article>
+      </div>
+
+      <button class="arrow right">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+
+      <div class="indicator">
+        <span class="circle active"></span><span class="circle"></span>
+        <span class="circle"></span><span class="circle"></span>
+        <span class="circle"></span><span class="circle"></span>
+      </div>
+
+      <div class="bottom-border"></div>
+    </div>
+
+    <!-- ✅ 할인 행사 줄 -->
+    <div class="product-row no-border">
+      <div class="tab-title">할인행사</div>
+      <button class="arrow left">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+
+      <div class="product-wrap">
+        <article class="product-item">
+          <div class="product-box">
+            <img src="img/strmong.jpg" alt="남양 딸기에몽 190ml">
+            <i class="fa fa-star corner-star"></i>
+          </div>
+          <div class="product-name">남양) 딸기에몽 190ml</div>
+          <div class="product-price">
+            <span class="current">1,400원</span>
+            <span class="origin">1,600</span>
+          </div>
+          <div class="product-rating">
+            <i class="fas fa-star"></i> 16
+          </div>
+
+        </article>
+
+        <article class="product-item">
+          <div class="product-box">
+            <img src="img/hush.jpg" alt="매일 허쉬초코쿠키크림 235ml">
+            <i class="fa fa-star corner-star"></i>
+          </div>
+          <div class="product-name">매일) 허쉬초코쿠키크림 235ml</div>
+          <div class="product-price">
+            <span class="current">1,400원</span>
+            <span class="origin">1,600</span>
+          </div>
+          <div class="product-rating">
+            <i class="fas fa-star"></i> 23
+          </div>
+
+        </article>
+
+        <article class="product-item">
+          <div class="product-box">
+            <img src="img/grand.jpg" alt="남양 요구르트그란데 280ml">
+            <i class="fa fa-star corner-star"></i>
+          </div>
+          <div class="product-name">남양) 요구르트그란데 280ml</div>
+          <div class="product-price">
+            <span class="current">1,600원</span>
+            <span class="origin">1,700</span>
+          </div>
+          <div class="product-rating">
+            <i class="fas fa-star"></i> 55
+          </div>
+
+        </article>
+
+        <article class="product-item">
+          <div class="product-box">
+            <img src="img/maild.jpg" alt="매일 마일드카페라떼 220ml">
+            <i class="fa fa-star corner-star"></i>
+          </div>
+          <div class="product-name">매일) 마일드카페라떼 220ml</div>
+          <div class="product-price">
+            <span class="current">2,000원</span>
+            <span class="origin">2,300</span>
+          </div>
+          <div class="product-rating">
+            <i class="fas fa-star"></i> 36
+          </div>
+
+        </article>
+
+        <article class="product-item">
+          <div class="product-box">
+            <img src="img/milk.jpg" alt="남양 맛있는우유 900ml">
+            <i class="fa fa-star corner-star"></i>
+          </div>
+          <div class="product-name">남양) 맛있는우유 900ml</div>
+          <div class="product-price">
+            <span class="current">3,100원</span>
+            <span class="origin">3,200</span>
+          </div>
+          <div class="product-rating">
+            <i class="fas fa-star"></i> 57
+          </div>
+
+        </article>
+      </div>
+
+      <button class="arrow right">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+
+      <div class="indicator">
+        <span class="circle active"></span><span class="circle"></span>
+        <span class="circle"></span><span class="circle"></span>
+        <span class="circle"></span><span class="circle"></span>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!------------------------------------------------------->
+
+
+  <footer>
+    <div class="first">
+      <img class="blogo" src="img/logo.png" alt="세븐일레븐 로고">
+      <div class="box1">
+        <p>FAMILY SITE <i class="fas fa-chevron-up"></i></p>
+      </div>
+      <div class="box2">
+        <p>GO</p>
+      </div>
+    </div>
+    <div class="second">
+      <p>CUSTOMER 고객의소리 | 채용문의 | 창업상담 | 입점문의 <br>
+        RECRUT 기업채용 | MATE | 윤리핫라인 | 불공정거래신고 | 안전·보건핫라인</p>
+      <P><span>사이트맵</span> | 개인정보처리방침 | 고정형 영상정보처리기기 운영·관리 방침</P>
+      <div class="txt">
+        <img src="img/ico_ISMSP.png" alt="">
+        <p>[인증범위] 코리아세븐 세븐일레븐 홈페이지 및 모바일 앱 서비스 <br>
+          [유효기간] 2024-02-07 ~ 2027-02-06 </p>
+      </div>
+    </div>
+    <div class="third">
+      <p><span>서울특별시 강동구 천호대로 1077 이스트센트럴타워 16~18층 · TEL 1577-0711 · FAX 02-2679-6860</span><br>세븐일레븐 고객센터
+        1577-0711 · 롯데백화점 고객센터 1688-1211</p>
+    </div>
+  </footer>
+</body>
+
+</html>

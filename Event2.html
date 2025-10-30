@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-ELEVEN</title>
+    <link rel="icon" href="../img/favicon.ico">
+
+    <script src="https://kit.fontawesome.com/e04d3f37c6.js" crossorigin="anonymous"></script>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/contest.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".fa-bars").click(function (e) {
+                e.preventDefault();
+                let menu = $(".hamburger-menu");
+                if (menu.is(":visible")) {
+                    menu.slideUp({ duration: 400, easing: "swing" });
+                } else {
+                    menu.slideDown({ duration: 400, easing: "swing" });
+                }
+            });
+        });
+
+        $(document).ready(function () {
+            $(document).on('dragstart', function (e) {
+                e.preventDefault(); // 드래그 방지 (이미지, 링크 등)
+            });
+            $(document).on('selectstart', function (e) {
+                e.preventDefault(); // 텍스트 선택 방지
+            });
+            $(document).on('contextmenu', function (e) {
+                e.preventDefault(); // 우클릭 방지
+            });
+            $(document).on('keydown', function (e) {
+                if (e.ctrlKey && (e.key === 'c' || e.key === 'x' || e.key === 'v')) {
+                    e.preventDefault(); // Ctrl+C, Ctrl+X, Ctrl+V 방지
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="gnb">
+            <div class="logo"><a href="/index.html"><img src="img/logo.png" alt="세븐일레븐 로고"></a></div>
+            <ul class="nav">
+                <li><a href="/Event.html">EVENT</a></li>
+                <li><a href="sale.html">PRODUCT</a></li>
+                <li><a href="history.html">ABOUT 7</a></li>
+                <li><a href="/guide.html">창업안내</a></li>
+                <li><a href="#"><i class="fas fa-bars"></i></a></li>
+                <li><a href="https://www.lotte.co.kr/main.do#firstPage" target="_blank"><img src="img/group_logo.png"
+                            alt="그룹 로고"></a></li>
+            </ul>
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-list">
+                <ul>
+                    <li><a href="Event.html">이벤트</a></li>
+                    <li><a href="Event2.html">미술대회</a></li>
+                </ul>
+                <ul>
+                    <li><a href="sale.html">이달의 증정할인</a></li>
+                    <li><a href="new.html">PB상품 / 신상품</a></li>
+                    <li><a href="card.html">할인·멤버십 카드</a></li>
+                </ul>
+                <ul>
+                    <li><a href="history.html">회사소개</a></li>
+                    <li><a href="companydate.html">회사연혁</a></li>
+                    <li><a href="external.html">대외수상</a></li>
+                </ul>
+                <ul>
+                    <li><a href="guide.html">창업가이드</a></li>
+                    <li><a href="counsel.html">창업상담</a></li>
+                    <li><a href="success.html">창업성공기</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu">
+            <ul class="list">
+                <li><i class="fas fa-hamburger"></i> 창업안내 <span>> 창업상담</span></a></li>
+        </div>
+        <div class="img">
+            <img src="img/small_img.png" alt="">
+        </div>
+        </div>
+    </header>
+
+    <section class="contest">
+        <img src="/img/chm.jpg" alt="어린이미술관">
+    </section>
+
+    <footer>
+        <div class="first">
+            <img class="blogo" src="img/logo.png" alt="세븐일레븐 로고">
+            <div class="box1">
+                <p>FAMILY SITE <i class="fas fa-chevron-up"></i></p>
+            </div>
+            <div class="box2">
+                <p>GO</p>
+            </div>
+        </div>
+        <div class="second">
+            <p>CUSTOMER 고객의소리 | 채용문의 | 창업상담 | 입점문의 <br>
+                RECRUT 기업채용 | MATE | 윤리핫라인 | 불공정거래신고 | 안전·보건핫라인</p>
+            <P><span>사이트맵</span> | 개인정보처리방침 | 고정형 영상정보처리기기 운영·관리 방침</P>
+            <div class="txt">
+                <img src="img/ico_ISMSP.png" alt="">
+                <p>[인증범위] 코리아세븐 세븐일레븐 홈페이지 및 모바일 앱 서비스 <br>
+                    [유효기간] 2024-02-07 ~ 2027-02-06 </p>
+            </div>
+        </div>
+        <div class="third">
+            <p><span>서울특별시 강동구 천호대로 1077 이스트센트럴타워 16~18층 · TEL 1577-0711 · FAX 02-2679-6860</span><br>세븐일레븐 고객센터
+                1577-0711 · 롯데백화점 고객센터 1688-1211</p>
+        </div>
+    </footer>
+</body>
+
+</html>

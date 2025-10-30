@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7-ELEVEN</title>
+  <link rel="icon" href="../img/favicon.ico">
+
+  <script src="https://kit.fontawesome.com/e04d3f37c6.js" crossorigin="anonymous"></script>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/header1.css" rel="stylesheet">
+  <link href="css/event.css" rel="stylesheet">
+  <link href="css/news.css" rel="stylesheet">
+  <link href="css/store.css" rel="stylesheet">
+  <link href="css/footer1.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".fa-bars").click(function (e) {
+        e.preventDefault();
+        let menu = $(".hamburger-menu");
+        if (menu.is(":visible")) {
+          menu.slideUp({ duration: 400, easing: "swing" });
+        } else {
+          menu.slideDown({ duration: 400, easing: "swing" });
+        }
+      });
+    });
+
+    $(document).ready(function () {
+      $(document).on('dragstart', function (e) {
+        e.preventDefault(); // 드래그 방지 (이미지, 링크 등)
+      });
+      $(document).on('selectstart', function (e) {
+        e.preventDefault(); // 텍스트 선택 방지
+      });
+      $(document).on('contextmenu', function (e) {
+        e.preventDefault(); // 우클릭 방지
+      });
+      $(document).on('keydown', function (e) {
+        if (e.ctrlKey && (e.key === 'c' || e.key === 'x' || e.key === 'v')) {
+          e.preventDefault(); // Ctrl+C, Ctrl+X, Ctrl+V 방지
+        }
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="gnb">
+      <div class="logo"><a href="/index.html"><img src="img/logo.png" alt="세븐일레븐 로고"></a></div>
+      <ul class="nav">
+        <li><a href="/Event.html">EVENT</a></li>
+        <li><a href="sale.html">PRODUCT</a></li>
+        <li><a href="history.html">ABOUT 7</a></li>
+        <li><a href="/guide.html">창업안내</a></li>
+        <li><a href="#"><i class="fas fa-bars"></i></a></li>
+        <li><a href="https://www.lotte.co.kr/main.do#firstPage" target="_blank"><img src="img/group_logo.png"
+              alt="그룹 로고"></a></li>
+      </ul>
+    </div>
+    <div class="hamburger-menu">
+      <div class="gnb">
+        <div class="logo"><a href="/index.html"><img src="img/logo.png" alt="세븐일레븐 로고"></a></div>
+        <ul class="nav">
+          <li><a href="/Event.html">EVENT</a></li>
+          <li><a href="sale.html">PRODUCT</a></li>
+          <li><a href="history.html">ABOUT 7</a></li>
+          <li><a href="/guide.html">창업안내</a></li>
+          <li><a href="#"><i class="fas fa-bars"></i></a></li>
+          <li><a href="https://www.lotte.co.kr/main.do#firstPage" target="_blank"><img src="img/group_logo.png"
+                alt="그룹 로고"></a></li>
+        </ul>
+      </div>
+      <div class="hamburger-list">
+        <ul>
+          <li><a href="Event.html">이벤트</a></li>
+          <li><a href="Event2.html">미술대회</a></li>
+        </ul>
+        <ul>
+          <li><a href="sale.html">이달의 증정할인</a></li>
+          <li><a href="new.html">PB상품 / 신상품</a></li>
+          <li><a href="card.html">할인·멤버십 카드</a></li>
+        </ul>
+        <ul>
+          <li><a href="history.html">회사소개</a></li>
+          <li><a href="companydate.html">회사연혁</a></li>
+          <li><a href="external.html">대외수상</a></li>
+        </ul>
+        <ul>
+          <li><a href="guide.html">창업가이드</a></li>
+          <li><a href="counsel.html">창업상담</a></li>
+          <li><a href="success.html">창업성공기</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="background"><img src="/img/background.png" alt="배경"></div>
+  </header>
+
+  <section class="new">
+    <h1>NEW & HOT</h1>
+    <div class="list">
+      <article>
+        <img src="/img/sangak.png" alt="">
+        <div class="label">
+          <p>1 + 1</p>
+          <p>행복이 2배 !</p>
+        </div>
+      </article>
+      <article>
+        <img src="/img/icof.png" alt="">
+        <div class="label">
+          <p>2 + 1</p>
+          <p>즐거움이 하나 더 !</p>
+        </div>
+      </article>
+      <article>
+        <img src="/img/coke.png" alt="">
+        <div class="label">
+          <p>증정행사</p>
+          <p>보너스가 하나 더 !</p>
+        </div>
+      </article>
+      <article>
+        <img src="/img/water.png" alt="">
+        <div class="label">
+          <p>할인행사</p>
+          <p>할인 상품 획득찬스 !</p>
+        </div>
+      </article>
+      <article>
+        <img src="/img/twof.png" alt="">
+        <div class="label">
+          <p>PB상품</p>
+          <p>12개국 공통판매 !</p>
+        </div>
+      </article>
+    </div>
+    <p><a href="new.html"> 더보기 </a><i class="fas fa-chevron-right"></i></p>
+    <div class="mposter">
+      <div class="arrow">
+        <div class="larrow">
+          <i class="fas fa-chevron-left"></i>
+        </div>
+        <div class="rarrow">
+          <i class="fas fa-chevron-right"></i>
+        </div>
+      </div>
+      <div class="mlist">
+        <article>
+          <img src="img/cmilk1.png" alt="">
+          <div>
+            <div class="imt">
+              <div class="imgs">
+                <img src="img/oneone.png" alt="">
+                <img src="img/news.png" alt="">
+                <div class="star">
+                  <i class="fas fa-star"></i>
+                  <p>14</p>
+                </div>
+              </div>
+              <p>[덴마크] 커피커피 300ml <br><strong>2,100원</strong></p>
+            </div>
+          </div>
+        </article>
+        <article>
+          <img src="img/str1.png" alt="">
+          <div>
+            <div class="imt">
+              <div class="imgs">
+                <img src="img/twoone.png" alt="">
+                <div class="star">
+                  <i class="fas fa-star"></i>
+                  <p>10</p>
+                </div>
+              </div>
+              <p>[서울] 목장딸기요구르트 225ml <br><strong> 2,700원</strong></p>
+            </div>
+          </div>
+        </article>
+        <article>
+          <img src="img/comilk.png" alt="">
+          <div>
+            <div class="imt">
+              <div class="imgs">
+                <img src="img/oneone.png" alt="">
+                <img src="img/PBs.png" alt="">
+                <div class="star">
+                  <i class="fas fa-star"></i>
+                  <p>32</p>
+                </div>
+              </div>
+              <p>[빙그레] 오구초코타임 200ml <br><strong> 1,300원</strong></p>
+            </div>
+          </div>
+        </article>
+        <article>
+          <img src="img/mango.png" alt="">
+          <div>
+            <div class="imt">
+              <div class="imgs">
+                <img src="img/sale.png" alt="">
+                <div class="star">
+                  <i class="fas fa-star"></i>
+                  <p>19</p>
+                </div>
+              </div>
+              <p>[돌코리아] 후룻바틀망고 66g <br><strong> 7,000원</strong> </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="event">
+    <h1>EVENT</h1>
+    <p><a href="/Event.html">더보기 <i class="fas fa-chevron-right"></i></a></p>
+    <div class="poster">
+      <div class="arrow">
+        <i class="fas fa-chevron-left"></i>
+      </div>
+      <article>
+        <img src="img/minsang.png" alt="">
+        <p><span>[9월]</span> 민생회복 <br> 2025-09-18 ~ 2025-10-31</p>
+      </article>
+      <article>
+        <img src="img/bear.png" alt="">
+        <p><span>[9월]</span> 맥주 <br> 2025-09-01 ~ 2025-09-30</p>
+      </article>
+      <article>
+        <img src="img/wine9.png" alt="">
+        <p><span>[9월]</span> 와인 <br> 2025-09-01 ~ 2025-09-30</p>
+      </article>
+      <article>
+        <img src="img/rice.png" alt="">
+        <p>25년 농식품바우처 <br> 2025-04-01 ~ 2025-12-31</p>
+      </article>
+      <div class="arrow">
+        <i class="fas fa-chevron-right"></i>
+      </div>
+    </div>
+  </section>
+
+  <section class="store">
+    <h1>창업</h1>
+    <div class="storebox">
+      <img src="/img/man.png" alt="">
+      <div class="text">
+        <h4>상생, 협력 그리고 더 큰 희망.</h4>
+        <p>세븐 일레븐은 함께 성장하는 동반자로서 <br> 가맹점주님들과의 신뢰를 바탕으로 지속 가능한 미래를 만들어갑니다. <br><br> 가치를 공유하고 함께 나아간다면, 성공은 언제나 우리의
+          것입니다.</br></p>
+      </div>
+    </div>
+    <div class="storeup">
+      <article>
+        <a href="counsel.html">
+          <div class="group">
+            <img src="img/message.png" alt="">
+            <p>창업상담</p>
+          </div>
+        </a>
+      </article>
+      <article>
+        <div class="group">
+          <img src="img/graph.png" alt="">
+          <p>가맹조건</p>
+        </div>
+      </article>
+      <article>
+        <a href="guide.html">
+          <div class="group">
+            <img src="img/televition.png" alt="">
+            <p>창업설명</p>
+          </div>
+        </a>
+      </article>
+      <article>
+        <div class="group">
+          <img src="img/rotate.png" alt="">
+          <p>창업절차</p>
+        </div>
+      </article>
+      <article>
+        <div class="group">
+          <img src="img/stores.png" alt="">
+          <p>점포추천</p>
+        </div>
+      </article>
+      <article>
+        <a href="success.html">
+          <div class="group">
+            <img src="img/book.png" alt="">
+            <p>성공사례</p>
+          </div>
+        </a>
+      </article>
+    </div>
+  </section>
+
+  <footer>
+    <div class="first">
+      <img class="blogo" src="img/logo.png" alt="세븐일레븐 로고">
+      <div class="box1">
+        <p>FAMILY SITE<i class="fas fa-chevron-up"></i></p>
+      </div>
+      <div class="box2">
+        <p>GO</p>
+      </div>
+    </div>
+    <div class="second">
+      <p>CUSTOMER 고객의소리 | 채용문의 | 창업상담 | 입점문의 <br>
+        RECRUT 기업채용 | MATE | 윤리핫라인 | 불공정거래신고 | 안전·보건핫라인</p>
+      <P><span>사이트맵</span> | 개인정보처리방침 | 고정형 영상정보처리기기 운영·관리 방침</P>
+      <div class="txt">
+        <img src="img/ico_ISMSP.png" alt="">
+        <p>[인증범위] 코리아세븐 세븐일레븐 홈페이지 및 모바일 앱 서비스 <br>
+          [유효기간] 2024-02-07 ~ 2027-02-06 </p>
+      </div>
+    </div>
+    <div class="third">
+      <p><span>서울특별시 강동구 천호대로 1077 이스트센트럴타워 16~18층 · TEL 1577-0711 · FAX 02-2679-6860</span><br>세븐일레븐 고객센터
+        1577-0711 · 롯데백화점 고객센터 1688-1211</p>
+    </div>
+  </footer>
+</body>
+
+</html>

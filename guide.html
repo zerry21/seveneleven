@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7-ELEVEN</title>
+    <link rel="icon" href="../img/favicon.ico">
+
+    <script src="https://kit.fontawesome.com/e04d3f37c6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <link href="css/guidestyle.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".fa-bars").click(function (e) {
+                e.preventDefault();
+                let menu = $(".hamburger-menu");
+                if (menu.is(":visible")) {
+                    menu.slideUp({ duration: 400, easing: "swing" });
+                } else {
+                    menu.slideDown({ duration: 400, easing: "swing" });
+                }
+            });
+        });
+
+        $(document).ready(function () {
+            $(document).on('dragstart', function (e) {
+                e.preventDefault(); // 드래그 방지 (이미지, 링크 등)
+            });
+            $(document).on('selectstart', function (e) {
+                e.preventDefault(); // 텍스트 선택 방지
+            });
+            $(document).on('contextmenu', function (e) {
+                e.preventDefault(); // 우클릭 방지
+            });
+            $(document).on('keydown', function (e) {
+                if (e.ctrlKey && (e.key === 'c' || e.key === 'x' || e.key === 'v')) {
+                    e.preventDefault(); // Ctrl+C, Ctrl+X, Ctrl+V 방지
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="gnb">
+            <div class="logo"><a href="index.html"><a href="/index.html"><img src="img/logo.png" alt="세븐일레븐 로고"></a>
+            </div></a>
+            <ul class="nav">
+                <li><a href="/Event.html">EVENT</a></li>
+                <li><a href="sale.html">PRODUCT</a></li>
+                <li><a href="history.html">ABOUT 7</a></li>
+                <li><a href="/guide.html">창업안내</a></li>
+                <li><a href="#"><i class="fas fa-bars"></i></a></li>
+                <li><a href="https://www.lotte.co.kr/main.do#firstPage" target="_blank"><img src="img/group_logo.png"
+                            alt="그룹 로고"></a></li>
+            </ul>
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-list">
+                <ul>
+                    <li><a href="Event.html">이벤트</a></li>
+                    <li><a href="Event2.html">미술대회</a></li>
+                </ul>
+                <ul>
+                    <li><a href="sale.html">이달의 증정할인</a></li>
+                    <li><a href="new.html">PB상품 / 신상품</a></li>
+                    <li><a href="card.html">할인·멤버십 카드</a></li>
+                </ul>
+                <ul>
+                    <li><a href="history.html">회사소개</a></li>
+                    <li><a href="companydate.html">회사연혁</a></li>
+                    <li><a href="external.html">대외수상</a></li>
+                </ul>
+                <ul>
+                    <li><a href="guide.html">창업가이드</a></li>
+                    <li><a href="counsel.html">창업상담</a></li>
+                    <li><a href="success.html">창업성공기</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="menu">
+            <ul class="list">
+                <li><i class="fas fa-hamburger"></i> 창업안내 <span>> 창업상담</span></a></li>
+            </ul>
+        </div>
+        <div class="img">
+            <img src="img/small_img.png" alt="">
+        </div>
+    </header>
+
+    <section class="tab-menu">
+        <div class="tab-inner">
+            <a href="guide.html"><button class="tab active">창업가이드</button></a>
+            <a href="counsel.html"><button class="tab">창업상담</button></a>
+            <a href="success.html"><button class="tab">창업성공기</button></a>
+        </div>
+    </section>
+
+
+    <section class="seven-section">
+        <div class="inner">
+            <h2 class="title">
+                국내 최초, 세계 1등 편의점
+                <span class="highlight">
+                    <span>7</span><span
+                        class="no-dot">-</span><span>E</span><span>L</span><span>E</span><span>V</span><span>E</span><span>N</span>
+                </span>
+            </h2>
+
+
+            <div class="content">
+                <div class="image-wrap">
+                    <img src="img/info.png" alt="지구본 이미지">
+                </div>
+
+                <div class="text-box">
+                    <p>1927년 미국 달라스에서 세계 최초 편의점 탄생.<br>
+                        편의점의 살아있는 역사. 90년 역사의 가치있는 브랜드</p>
+                    <p>1989년 대한민국 최초 편의점 1호 세븐일레븐 올림픽점 개점<br>
+                        국내 1만여점 이상 운영 중!<br>
+                        편의점의 상징인 삼각김밥을 최초 출시</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cooperation cooperation-1">
+        <div class="inner">
+            <h2>
+                롯데그룹과 함께하는
+                <span class="highlight">
+                    <span>최</span><span>상</span><span>의</span><span class="space"> </span>
+                    <span>협</span><span>력</span><span class="space"> </span>
+                    <span>시</span><span>스</span><span>템</span>
+                </span>
+            </h2>
+
+            <div class="cooperation-list">
+
+                <!-- 1 -->
+                <div class="coop-item">
+                    <img src="img/pb.png" alt="PB상품 이미지">
+                    <div class="title-wrap">
+                        <p class="title">그룹 내 유명 제조사 제품을 PB상품으로</p>
+                        <div class="underline-box">
+                            <ul>
+                                <li class="left">
+                                    <strong>롯데칠성음료</strong>
+                                    <span class="down">음료시장의 최강자</span>
+                                    <strong>롯데푸드</strong>
+                                    <span class="down">아이스크림의 터줏대감</span>
+                                </li>
+                                <li class="right">
+                                    <strong>롯데제과</strong>
+                                    <span>제과중의 제과</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+                <div class="coop-item">
+                    <img src="img/conv.png" alt="생산 설비 이미지">
+                    <div class="title-wrap">
+                        <p class="title">그룹 내 생산 설비를 가진 편의점</p>
+                        <div class="underline-box">
+                            <ul>
+                                <li class="secleft">
+                                    <strong>롯데제과</strong>
+                                    <span>첨단 설비를 갖춘<br>베이커리 전용 공장</span>
+                                </li>
+                                <li class="secright">
+                                    <strong>롯데푸드</strong>
+                                    <span>밥의 달인들이<br>책임지는<br>푸드 전용 공장</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="coop-item">
+                    <img src="img/price.png" alt="공동구매 이미지">
+                    <div class="title-wrap">
+                        <p class="title">공동구매로 저렴한 상품원가</p>
+                        <div class="underline-box center">
+                            <ul>
+                                <li class="lastleft">
+                                    <strong>롯데백화점 / 롯데슈퍼 / 롯데마트</strong>
+                                    <span>롯데그룹 유통 계열사 통합구매로<br>원가 절감</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <hr class="cut-line">
+
+
+
+
+
+    <!--제일 마지막 하단-->
+    <section class="cooperation cooperation-2">
+        <div class="inner">
+            <h2>
+                경영주에게 드리는
+                <span class="highlight">
+                    <span>행</span><span>복</span><span>충</span><span>전</span><span class="space"> </span>
+                    <span>패</span><span>키</span><span>지</span>
+                </span>
+            </h2>
+
+            <div class="cooperation-list">
+
+                <!-- 1 -->
+
+                <div class="coop-item coop-item-final">
+                    <img src="img/notebook.png" alt="대화">
+                    <div class="title-wrap">
+                        <p class="title">경영주 건강/계약 보호</p>
+                        <div class="underline-box">
+                            <ul>
+                                <li class="lastleft">
+                                    <strong>점포 보험</strong>
+                                    <span class="down">점포화재, 현금도난 보험</span>
+                                    <strong>경영주 보험</strong>
+                                    <span class="down">경영주 단체 상해보험</span>
+                                    <strong>매출부진점 관리</strong>
+                                    <span class="down">매출 부진 점포<br>
+                                        집중 지원 프로그램</span>
+                                    <strong class="single-line">오픈점 사전 검증</strong>
+                                    <span class="down">예비 점포 현장 검증 및<br>
+                                        매출 시뮬레이션</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- 2 -->
+
+                <div class="coop-item coop-item-final">
+                    <img src="img/people.png" alt="사람">
+                    <div class="title-wrap">
+                        <p class="title">경영주 소통강화</p>
+                        <div class="underline-box">
+                            <ul>
+                                <li class="lastleft">
+                                    <strong>협의체 운영</strong>
+                                    <span>경영주 공식 상생협의체<br>
+                                        구성 및 정책 자문제</span>
+                                </li>
+                                <li class="lastleft">
+                                    <strong>콜센터</strong>
+                                    <span>경영주와 고객을 위한<br>통합콜센터 세븐콜 운영</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+
+                <div class="coop-item coop-item-final">
+                    <img src="img/get.jpg" alt="채용">
+                    <div class="title-wrap">
+                        <p class="title">경영주 자녀 지원</p>
+                        <div class="underline-box center">
+                            <ul>
+                                <li class="lastleft">
+                                    <strong>고등학생 자녀<br>등록금 전액 지원</strong>
+                                    <span>평가 우수점포 /<br>3년 이상 운영 /<br>자녀 수 1점포 1자녀</span>
+                                </li>
+                                <li class="lastleft">
+                                    <strong>대학생 자녀<br>등록금 전액 지원</strong>
+                                    <span>전점포 /<br>3개월 이상 운영 /<br>자녀 수 제한없음</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="first">
+            <img class="blogo" src="img/logo.png" alt="세븐일레븐 로고">
+            <div class="box1">
+                <p>FAMILY SITE<i class="fas fa-chevron-up"></i></p>
+            </div>
+            <div class="box2">
+                <p>GO</p>
+            </div>
+        </div>
+
+        <div class="second">
+            <p>CUSTOMER 고객의소리 | 채용문의 | 창업상담 | 입점문의 <br>
+                RECRUIT 기업채용 | MATE | 윤리핫라인 | 불공정거래신고 | 안전·보건핫라인</p>
+            <p><span>사이트맵</span> | 개인정보처리방침 | 고정형 영상정보처리기기 운영·관리 방침</p>
+            <div class="txt">
+                <img src="img/ico_ISMSP.png" alt="">
+                <p>[인증범위] 코리아세븐 세븐일레븐 홈페이지 및 모바일 앱 서비스 <br>
+                    [유효기간] 2024-02-07 ~ 2027-02-06 </p>
+            </div>
+        </div>
+
+        <div class="third">
+            <p><span>서울특별시 강동구 천호대로 1077 이스트센트럴타워 16~18층 · TEL 1577-0711 · FAX
+                    02-2679-6860</span><br>
+                세븐일레븐 고객센터 1577-0711 · 롯데백화점 고객센터 1688-1211</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

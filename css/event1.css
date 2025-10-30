@@ -1,0 +1,151 @@
+.panel{
+  width: 1185px;
+  height: 280px;
+  margin: 40px 365px;
+  background-color: #caf0e2;
+  border-radius: 50px;
+  display: flex;
+}
+
+.panel .text h3{
+  font-size: 19px;
+  font-weight: 700;
+  color: #333;
+  margin-top: 80px;
+  margin-left: 101px;
+}
+.panel .text p{
+  font-size: 17px;
+  font-weight: 500;
+  color: #555;
+  margin-top: 15px;
+  margin-left: 101px;
+}
+.panel img{
+  width: 240px;
+  height: 217px;
+  margin-top: 32px;
+  margin-left: 253px;
+}
+
+.wrapper{
+  width: 1920px;
+  height: 553px;
+  background-color: #f9fcf2;
+  position: relative;
+}
+.wrapper > h3{
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 35px;
+  margin-left: 455px;
+  color: #111;
+}
+
+.next > .arrow:first-of-type{
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #dcedde;
+  border-radius: 10px;
+  margin-top: 170px;
+  margin-left: 466px;
+  cursor: pointer;
+}
+.next > .arrow:first-of-type i{
+  width: 11px;
+  height: 20px;
+  color: #666;
+  margin-top: 11px;
+  margin-left: 14px;
+}
+
+.next > .arrow:nth-of-type(2){
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-color: #dcedde;
+  border-radius: 10px;
+  margin-top: 170px;
+  margin-left: 1415px;
+  cursor: pointer;
+}
+.next > .arrow:nth-of-type(2) i{
+  width: 11px;
+  height: 20px;
+  color: #666;
+  margin-top: 11px;
+  margin-left: 14px;
+}
+
+.next > .arrow:hover{
+  border: 1px dashed #666;
+  transform: scale(1.2);
+}
+.next > article img{
+  width: 280px;
+  height: 280px;
+  border-radius: 30px;
+}
+.next > article:nth-of-type(1){
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 574px;
+  opacity: 40%;
+}
+.next > article:nth-of-type(1) p{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #666;
+  text-align: center;
+}
+
+.next > article:nth-of-type(2){
+  z-index: 999;
+  position: absolute;
+  margin-top: 70px;
+  margin-left: 820px;
+}
+.next > article:nth-of-type(2) p{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #666;
+  text-align: center;
+}
+.next > article:nth-of-type(2) span{
+  color: #111;
+}
+
+.next > article:nth-of-type(3){
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 1065px;
+  opacity: 40%;
+}
+.next > article:nth-of-type(3) p{
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  color: #666;
+  text-align: center;
+} 
+
+.dot {
+  display: inline-block;
+  width: 15px;
+  height: 15px; 
+  margin: 0 5px;         
+  background-color: #d9d9d9;  
+  border-radius: 50%;       
+}
+.dots{
+  position: absolute;
+  margin-top: 435px;
+  margin-left: 929px;
+}
+
+.dot.active {
+  background-color: #dcedde;
+}

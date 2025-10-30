@@ -1,0 +1,113 @@
+.contain{
+    margin-bottom:80px;
+}
+.awards{
+    gap:35px;
+}
+.awards-title{
+    margin-top:50px;
+    margin-left:544px;
+    color:#4D8654;
+    font-size:25px;
+    font-weight:700;
+    letter-spacing:0.1em;
+}
+.awards-desc{
+    margin-top:-30px;
+    margin-left:670px;
+    font-size:20px;
+    line-height:30px;
+    font-weight:500;
+    color:#666666;
+}
+
+.awards-callender{
+    margin-left:1414px;
+    margin-top:-34px;
+}
+
+.ybtn{
+    margin-top:-50px;
+    margin-left:315px;
+    width:1280px;
+    height:80px;
+    border-bottom:1px solid #4D8654;
+    border-top:1px solid #4D8654;
+}
+
+#nowday{
+    border-radius:100px;
+    width:159px;
+    height:34px;
+    margin-top:22px;
+    margin-left:243px;
+    border:1px solid #4D8654;
+    color:#4D8654;
+    background-color:#ffffff;
+    font-size:18px;
+    font-weight:500;
+    line-height:12px;
+    cursor: pointer;
+}
+#nowday:hover{
+    color:#ffffff;
+    background-color:#4D8654;
+}
+
+#shortday{
+    border-radius:100px;
+    width:159px;
+    height:34px;
+    margin-left:50px;
+    border:none;
+    color:#ffffff;
+    background-color:#4D8654;
+    font-size:18px;
+    font-weight:500;
+    line-height:12px;
+    cursor:pointer;
+}
+
+#longday{
+    border-radius:100px;
+    width:159px;
+    height:34px;
+    margin-left:50px;
+    border:1px solid #4D8654;
+    color:#4D8654;
+    background-color:#ffffff;
+    font-size:18px;
+    font-weight:500;
+    line-height:12px;
+    cursor:pointer;
+}
+#longday:hover{
+    color:#ffffff;
+    background-color:#4D8654;
+}
+
+#agoday{
+    border-radius:100px;
+    width:159px;
+    height:34px;
+    margin-left:50px;
+    border:1px solid #4D8654;
+    color:#4D8654;
+    background-color:#ffffff;
+    font-size:18px;
+    font-weight:500;
+    line-height:12px;
+    cursor:pointer;
+}
+#agoday:hover{
+    color:#ffffff;
+    background-color:#4D8654;
+}
+
+.excontries{
+    margin-top:50px;
+    margin-left:493px;
+    margin-bottom:94px;
+}
+
+

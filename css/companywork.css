@@ -1,0 +1,108 @@
+.work{
+    margin-bottom:97px;
+}
+.work-title{
+    margin-top:50px;
+    margin-left:612px;
+    color:#4D8654;
+    font-size:25px;
+    font-weight:700;
+    letter-spacing:0.1em;
+}
+.work-desc{
+    margin-top:-30px;
+    margin-left:741px;
+    font-size:20px;
+    line-height:30px;
+    font-weight:500;
+    color:#666666;
+}
+
+.works-callender{
+    margin-left:1414px;
+    margin-top:-34px;
+}
+
+.cbtn{
+    margin-top:30px;
+    margin-left:315px;
+    width:1280px;
+    height:80px;
+    border-bottom:1px solid #4D8654;
+    border-top:1px solid #4D8654;
+}
+
+#company{
+    border-radius:100px;
+    width:159px;
+    height:34px;
+    margin-top:22px;
+    margin-left:243px;
+    border:1px solid #4D8654;
+    color:#4D8654;
+    background-color:#ffffff;
+    font-size:18px;
+    font-weight:500;
+    line-height:12px;
+    cursor: pointer;
+}
+#company:hover{
+    color:#ffffff;
+    background-color:#4D8654;
+}
+
+#toshortday{
+    border-radius:100px;
+    width:159px;
+    height:34px;
+    margin-left:50px;
+    border:none;
+    color:#ffffff;
+    background-color:#4D8654;
+    font-size:18px;
+    font-weight:500;
+    line-height:12px;
+    cursor:pointer;
+}
+
+#tolongday{
+    border-radius:100px;
+    width:159px;
+    height:34px;
+    margin-left:50px;
+    border:1px solid #4D8654;
+    color:#4D8654;
+    background-color:#ffffff;
+    font-size:18px;
+    font-weight:500;
+    line-height:12px;
+    cursor:pointer;
+}
+#tolongday:hover{
+    color:#ffffff;
+    background-color:#4D8654;
+}
+
+#toagoday{
+    border-radius:100px;
+    width:159px;
+    height:34px;
+    margin-left:50px;
+    border:1px solid #4D8654;
+    color:#4D8654;
+    background-color:#ffffff;
+    font-size:18px;
+    font-weight:500;
+    line-height:12px;
+    cursor:pointer;
+}
+#toagoday:hover{
+    color:#ffffff;
+    background-color:#4D8654;
+}
+
+.comhere{
+    margin-top:50px;
+    margin-left:493px;
+}
+

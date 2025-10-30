@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Pretendard';
+    color: #111;
+}
+
+/* 🟢 창업 탭 메뉴 */
+.tab-menu {
+    background-color: #f6faef;
+    /* 연한 초록빛 배경 */
+    height: 90px;
+    /* 세로 높이 고정 */
+    display: flex;
+    /* 가운데 정렬용 */
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tab-inner {
+    display: inline-flex;
+    gap: 30px;
+    /* 탭 사이 간격 */
+}
+
+.tab-menu .tab {
+    width: 130px;
+    /* 버튼 가로 크기 */
+    height: 40px;
+    /* 버튼 세로 크기 */
+    border-radius: 30px;
+    /* 둥근 모서리 (세로의 절반 정도면 자연스러움) */
+    border: none;
+    background-color: #fff;
+    /* 기본 배경색 */
+    color: #4D8654;
+    /* 글자색 (초록색 계열) */
+    font-family: 'Pretendard';
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin: 0 5px;
+    /* 버튼 간 간격 */
+    transition: all 0.3s ease;
+}
+
+/* 활성화된 탭 (왼쪽 ‘창업가이드’) */
+.tab-menu .tab.active {
+    background-color: #4D8654;
+    /* 진한 초록색 배경 */
+    color: #fff;
+}
+
+
+/* 🟩 선택된 탭 (active) */
+.tab.active {
+    background-color: #4a7b4a;
+    color: #fff;
+}
+
+/* 🐭 호버 시 */
+.tab:hover {
+    background-color: #e9f3e2;
+}
+
+/*손 섹션*/
+.seven-section {
+    background: #DCEDDE;
+    border-radius: 50px;
+    width: 1185px;
+    height: 230px;
+    margin: 50px auto 60px auto;
+    /* 섹션 상단 40px */
+    padding-top: 65px;
+    /* 타이틀 상단 65px */
+    box-sizing: border-box;
+    position: relative;
+    /* 절대 위치 이미지 기준 */
+}
+
+.seven-section .inner {
+    width: 100%;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    /* 텍스트 중앙 */
+    gap: 60px;
+    margin-top: 0;
+    /* 필요에 따라 조정 */
+}
+
+
+.image-wrap img {
+    width: 140px;
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 50%;
+    /* 부모 높이의 50% 지점 */
+    left: 250px;
+    /* 기존 가로 위치 그대로 */
+    transform: translateY(-50%);
+    /* 자기 높이의 절반만큼 위로 */
+}
+
+
+
+.text-box {
+    position: absolute;
+    /* 이미 절대 위치라면 그대로 유지 */
+    top: 60px;
+    /* 필요 시 조정 */
+    right: 190px;
+    /* 오른쪽 여백 */
+    bottom: 150px;
+    /* 하단 여백 */
+    width: auto;
+    /* 필요 시 조정 */
+    text-align: right;
+    /* 오른쪽 정렬 */
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+
+
+.text-box p {
+    margin: 50 100px 20px 0;
+    /* 순서: top right bottom left */
+}
+
+
+.text-box .medium-text {
+    font-size: 20px;
+    font-weight: 700;
+    /* Pretendard 기준 Medium */
+}
+
+.text-box .small-text {
+    font-size: 18px;
+    font-weight: 400;
+    color: #111;
+}
+
+
+
+.map-box-wrap {
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
+}
+
+/* NEW 리본 이미지 위치 조정 */
+.new-ribbon {
+    position: absolute;
+    top: -2px;
+    right: 70px;
+    width: 60px;
+    /* 리본 크기 조절 */
+    height: auto;
+}
+
+/* 리본이 map-box 기준으로 위치하도록 설정 */
+.map-box {
+    position: relative;
+    /* ← 이게 중요! */
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    width: 1120px;
+    height: 420px;
+    background: #fff;
+    border-radius: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    padding: 40px 60px;
+    box-sizing: border-box;
+}
+
+/* 왼쪽 이미지 영역 */
+.map-left img {
+    width: 470px;
+    height: 310px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+/* 오른쪽 텍스트 영역 */
+.map-right {
+    flex: 1;
+    text-align: left;
+}
+
+/* 이름 스타일 */
+.consultant-name {
+    display: inline-block;
+    /* 글자 길이만큼만 너비를 가짐 */
+    font-size: 18px;
+    font-weight: 600;
+    color: #111;
+    border-bottom: 1px solid #999;
+    /* 밑줄 */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+    /* 정렬 유지 */
+}
+
+/* 내부 글자 나란히 배치 */
+.consultant-name span,
+.consultant-name p {
+    display: inline-block;
+    /* 한 줄로 */
+    margin: 0;
+    vertical-align: middle;
+    /* 세로 정렬 */
+}
+
+/* 점포명 강조 */
+.consultant-name span {
+    color: #4D8654;
+    margin-right: 8px;
+}
+
+
+
+/* 이름도 동일 라인에 나오도록 inline처럼 설정 */
+.consultant-name p {
+    margin: 0;
+    font-weight: 500;
+    color: #111;
+}
+
+/* 본문 텍스트 */
+.region-list p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #111;
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+
+/* ✅ 상자 스타일 */
+.map-box-wrap1 {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    /* 상자 간 간격 */
+     margin: 80px 0;      /* 위 30px, 아래 30px 여백 */
+}
+
+.map-box1 {
+    width: 350px;
+    height: 450px;
+    background: #fff;
+    border-radius: 50px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    /* 바깥쪽 그림자 */
+    padding: 30px 40px 40px 40px;
+    /* 순서: 위(20px) 오른쪽(40px) 아래(40px) 왼쪽(40px) */
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 500;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* 개화산역점 상자 안 글자만 여백 조정 */
+.map-box-wrap1 .consultant-name span,
+.map-box-wrap1 .consultant-name p {
+    margin-bottom: 1.2px;   /* 글자 사이 아래 여백 */
+    line-height: 1.6;      /* 줄 간격 */
+}
+
+.map-box-wrap1 .region-list p {
+    margin-bottom: 3px;   /* 멘트 문장 사이 여백 */
+}
+
+
+/* 상자 안 이미지 위아래 여백 */
+.map-box-wrap1 img {
+    margin-top: 13px;    /* 이미지 위 여백 */
+    margin-bottom: 20px; /* 이미지 아래 여백 */
+}
+
+
+/* map-box-wrap1 안의 region-list만 적용 */
+.map-box-wrap1 .region-list p {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+.seven-section,
+.map-box-wrap,
+.map-box-wrap1,
+.map-box1 {
+    cursor: default;
+}

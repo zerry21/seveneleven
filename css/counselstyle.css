@@ -1,0 +1,493 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Pretendard';
+    color: #111;
+    background: #fff;
+}
+
+/* 🟢 창업 탭 메뉴 */
+.tab-menu {
+    background-color: #f6faef;
+    /* 연한 초록빛 배경 */
+    height: 90px;
+    /* 세로 높이 고정 */
+    display: flex;
+    /* 가운데 정렬용 */
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tab-inner {
+    display: inline-flex;
+    gap: 30px;
+    /* 탭 사이 간격 */
+}
+
+.tab-menu .tab {
+    width: 130px;
+    /* 버튼 가로 크기 */
+    height: 40px;
+    /* 버튼 세로 크기 */
+    border-radius: 30px;
+    /* 둥근 모서리 (세로의 절반 정도면 자연스러움) */
+    border: none;
+    background-color: #fff;
+    /* 기본 배경색 */
+    color: #4D8654;
+    /* 글자색 (초록색 계열) */
+    font-family: 'Pretendard';
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin: 0 5px;
+    /* 버튼 간 간격 */
+    transition: all 0.3s ease;
+}
+
+/* 활성화된 탭 (왼쪽 ‘창업가이드’) */
+.tab-menu .tab.active {
+    background-color: #4D8654;
+    /* 진한 초록색 배경 */
+    color: #fff;
+}
+
+
+/* 🟩 선택된 탭 (active) */
+.tab.active {
+    background-color: #4a7b4a;
+    color: #fff;
+}
+
+/* 🐭 호버 시 */
+.tab:hover {
+    background-color: #e9f3e2;
+}
+
+
+/*손 섹션*/
+.seven-section {
+    background: #DCEDDE;
+    border-radius: 50px;
+    width: 1185px;
+    height: 350px;
+    margin: 50px auto 0 auto;
+    /* 섹션 상단 40px */
+    padding-top: 65px;
+    /* 타이틀 상단 65px */
+    box-sizing: border-box;
+    position: relative;
+    /* 절대 위치 이미지 기준 */
+}
+
+.seven-section.second {
+    margin-top: 80px; /* 원하는 여백 */
+    margin-bottom: 60px; /* 원하는 여백 */
+    width: 1200px;    /* 가로 길이 예시 */
+}
+
+/* 두 번째 섹션 안 텍스트 색상, 굵기 변경 */
+.seven-section.second .text-box p {
+    color: #111;   /* 글자 색상 */
+    font-weight: 600; /* 굵기 */
+    font-size: 18px;  /* 필요하면 글자 크기도 */
+}
+
+/* span만 따로 스타일링 가능 */
+.seven-section.second .text-box .highlight-red {
+    color: #DF594D;
+    font-weight: 700;
+}
+
+
+.seven-section .inner {
+    width: 100%;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    /* 텍스트 중앙 */
+    gap: 60px;
+    margin-top: 0;
+    /* 필요에 따라 조정 */
+}
+
+
+.image-wrap img {
+    width: 140px;
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 50%;
+    /* 부모 높이의 50% 지점 */
+    left: 180px;
+    /* 기존 가로 위치 그대로 */
+    transform: translateY(-50%);
+    /* 자기 높이의 절반만큼 위로 */
+}
+
+
+
+.text-box {
+    position: absolute;
+    /* 이미 절대 위치라면 그대로 유지 */
+    top: 60px;
+    /* 필요 시 조정 */
+    right: 170px;
+    /* 오른쪽 여백 */
+    bottom: 150px;
+    /* 하단 여백 */
+    width: auto;
+    /* 필요 시 조정 */
+    text-align: right;
+    /* 오른쪽 정렬 */
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+
+
+.text-box p {
+    margin: 50 100px 20px 0;
+    /* 순서: top right bottom left */
+}
+
+.highlight-red {
+    color: #DF594D;
+    /* 세븐일레븐 로고 계열 빨강 */
+    font-weight: 700;
+    /* 굵게(bold) */
+}
+
+.text-box .medium-text {
+    font-weight: 500;
+    /* Pretendard 기준 Medium */
+}
+
+.text-box .small-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: #666666;
+}
+
+.text-box .go {
+    color: #DF594D;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
+
+.map {
+    display: flex;
+    justify-content: center;
+    /* 가운데 정렬 */
+    align-items: center;
+    /* 세로 정렬 */
+    gap: 220px;
+    /* 지도 세트 간격 */
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
+
+.map-item img {
+    width: 25px;
+    /* 지도 크기 조정 (원하는 크기로 변경 가능) */
+    height: auto;
+}
+
+.map-item {
+    display: flex;
+    align-items: center;
+    /* 이미지와 텍스트 세로 가운데 정렬 */
+    gap: 10px;
+    /* 지도와 글자 사이 간격 */
+}
+
+
+.map-item>p {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* 첫 번째 map-item */
+.map-item:nth-child(1) {
+    margin-top: 0px;
+    /* 아래로 이동 */
+    margin-left: 65px;
+    /* 오른쪽으로 이동 */
+}
+
+/* 두 번째 map-item */
+.map-item:nth-child(2) {
+    margin-top: 0px;
+    /* 아래로 이동 */
+    margin-right: 80px;
+    /* 왼쪽으로 이동 */
+}
+
+.map-item.item2 {
+    position: relative;
+    /* 꼭 필요 */
+    right: 15px;
+    /* 오른쪽으로 20px 이동 */
+}
+
+.map-item.item3 {
+    position: relative;
+    /* 꼭 필요 */
+    right: 160px
+    /* 오른쪽으로 20px 이동 */
+}
+
+
+
+.map-item.item21{
+    position: relative;
+    /* 꼭 필요 */
+    right: 115px;
+    /* 오른쪽으로 20px 이동 */
+}
+
+.map-item.item22{
+    position: relative;
+    /* 꼭 필요 */
+    right: 10px;
+    /* 오른쪽으로 20px 이동 */
+}
+
+.map-item.item23{
+    position: relative;
+    /* 꼭 필요 */
+    left: px;
+    /* 오른쪽으로 20px 이동 */
+}
+
+
+/* ✅ 그림자 상자 스타일 */
+.map-box-wrap {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    /* 상자 간 간격 */
+}
+
+.map-box {
+    width: 330px;
+    height: 450px;
+    background: #fff;
+    border-radius: 50px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    /* 바깥쪽 그림자 */
+    padding: 30px 40px 40px 40px;
+    /* 순서: 위(20px) 오른쪽(40px) 아래(40px) 왼쪽(40px) */
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 600;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* 마우스 올렸을 때 효과 (선택사항) */
+/*.map-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+}*/
+
+.map-section2 .map-box {
+    
+    width: 340px;
+    height: 350px;
+    margin-bottom: 70px;
+}
+
+
+
+
+/* 컨설턴트 이름 스타일링 */
+.consultant-name {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 500;
+    color: #111;
+    /* ⚠️ 밑줄 추가 */
+    border-bottom: 1px solid #999999;
+    /* 2px 두께의 회색 실선 */
+
+    /* ⚠️ 밑줄과 텍스트 사이의 간격 */
+    padding-bottom: 15px;
+
+    /* ⚠️ 밑줄과 아래 내용 사이의 간격 */
+    margin-bottom: 20px;
+
+    /* 상자 너비 전체에 걸쳐 밑줄이 생기도록 text-align: left; 로 변경 */
+    text-align: left;
+    /* 참고: h3는 block 요소이므로 기본적으로 부모 요소의 너비를 꽉 채웁니다. */
+}
+
+/* 지역 목록 컨테이너 스타일링 */
+.region-list {
+
+    position: relative; /* 자식 절대 위치 기준 */
+    font-size: 14px;
+    font-weight: 400;
+    color: #111;
+}
+
+/* 지역 목록 내 p 태그 스타일링 (줄 간격 조정 등) */
+.region-list p {
+    margin: 5px 0;
+    /* 각 줄 위아래 간격 */
+    line-height: 1.4;
+}
+
+
+
+
+
+.call {
+    color: #DF594D;
+    /* 글자 색상을 빨간색으로 */
+    font-size: 15px;
+    font-weight: 400;
+    /* 필요하면 굵기 조절 가능 */
+    line-height: 1.8;
+    letter-spacing: 1;
+    display: inline-block; /* 또는 block */
+}
+
+
+.call-la {
+    display: flex;           /* 이미지와 p를 가로로 나란히 */
+    align-items: center;     /* 세로 가운데 정렬 */
+    gap: 1px;               /* 이미지와 글자 사이 간격 */
+    margin-top: 20px;
+}
+
+
+
+/* call-la */
+.call-la img {
+    width: 20px;
+    height: auto;
+    margin-right: 10px; /* 이미지와 글 사이 간격 */
+}
+
+.call-la p {
+    margin: 0;               /* 불필요한 여백 제거 */
+    font-size: 15px;         /* 원하는 글자 크기 */
+    font-weight: 500;        /* 글자 굵기 */
+}
+
+.info-box {
+    margin-top: 60px;          /* 위쪽 여백 */
+    padding: 8px 15px;         /* 안쪽 여백 */
+    background-color: #DF594D; /* 연한 회색 배경 */
+    border: 1px solid #DF594D;    /* 테두리 */
+    border-radius: 50px;        /* 모서리 둥글게 */
+    width: fit-content;        /* 내용만큼 너비 */
+    font-size: 17px;           /* 글자 크기 */
+    font-weight: 300;
+    color: #fff;
+}
+
+/* hover 효과 */
+.info-box:hover {
+    background-color: #c00; /* 빨간색 배경 */
+    color: #fff;               /* 글자 색을 흰색으로 */
+    border-color: #c00;     /* 테두리 색도 맞춤 */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* 살짝 그림자 */
+    cursor: pointer;           /* 마우스 포인터 변경 */
+}
+
+
+
+
+.info-box-1 {
+    margin-top: 50px; /* 위치 조절 */
+}
+
+.info-box-2 {
+    margin-top: 50px; /* 2번 상자 위치 따로 조정 */
+}
+
+.info-box-3 {
+    margin-top: 50px; /* 2번 상자 위치 따로 조정 */
+}
+
+
+
+.info-box-21 {
+    margin-top: 50px; /* 위치 조절 */
+}
+
+.info-box-22 {
+    margin-top: 50px; /* 2번 상자 위치 따로 조정 */
+}
+
+.info-box-23 {
+    margin-top: 50px; /* 2번 상자 위치 따로 조정 */
+}
+
+
+.info-box-31 {
+    margin-top: 40px; /* 위치 조절 */
+}
+
+.info-box-32 {
+    margin-top: 140px; /* 2번 상자 위치 따로 조정 */
+}
+
+.info-box-33 {
+    margin-top: 160px; /* 2번 상자 위치 따로 조정 */
+}
+
+
+
+.call-la.call-la1 {
+    padding-top: 20px; /* 원하는 위치 조정 */
+}
+
+.call-la.call-la2 {
+    padding-top: 5px; /* 원하는 위치 조정 */
+}
+
+.call-la.call-la3 {
+    padding-top: 125px; /* 원하는 위치 조정 */
+}
+
+
+
+.call-la.call-la11 {
+    padding-top: 130px; /* 원하는 위치 조정 */
+}
+
+.call-la.call-la12 {
+    padding-top: 25px; /* 원하는 위치 조정 */
+}
+
+.call-la.call-la13 {
+    padding-top: 105px; /* 원하는 위치 조정 */
+}
